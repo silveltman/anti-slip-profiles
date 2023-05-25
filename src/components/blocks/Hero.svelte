@@ -3,34 +3,32 @@
     Section,
     Container,
     Highlight,
-    Split,
     Button,
     Image,
+    Stack,
   } from 'fulldev-ui'
 
   export let content: any
 </script>
 
-<Section class="dark pt-0">
+<Section class="dark-orange py-0">
   <Container>
-    <Split center>
-      <Highlight class="large">
-        <span class="text-sm text-base-11">Lorem ipsum</span>
-        <h2>{content.heading}</h2>
-        <p>{content.textarea}</p>
-        <svelte:fragment slot="footer">
-          <Button
-            class="light-indigo"
-            variant="solid"
-            {...content.button_1}
-          />
-          <Button
-            class="light-indigo"
-            {...content.button_1}
-          />
-        </svelte:fragment>
-      </Highlight>
-      <Image {...content.image} />
-    </Split>
+    <Stack>
+      <Image
+        src="/hero.png"
+        alt="Hero Image"
+      />
+      <div class="lg:flex items-center justify-between">
+        <Highlight class="large !max-w-none">
+          <p class="text-base-11">Gepatenteerde Anti-Slip producten</p>
+          <h1>Nooit meer een gladde vlonder</h1>
+        </Highlight>
+        <Button
+          text="Bekijk Producten"
+          variant="solid"
+          class="h-fit"
+        />
+      </div>
+    </Stack>
   </Container>
 </Section>

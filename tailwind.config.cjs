@@ -17,6 +17,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    extends: {
+      aspectRatio: {
+        'long': '259 / 431',
+      },
+    },
     fontFamily: {
       heading: '"Montserrat", sans-serif',
       subheading: '"Roboto Mono", sans-serif',
@@ -69,19 +74,19 @@ module.exports = {
           },
         },
         {
-          name: 'light-indigo',
+          name: 'light-orange',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.indigo),
+              base: getRadixColors(radixColors.orange),
               'base-9-content': 'white',
             },
           },
         },
         {
-          name: 'dark-indigo',
+          name: 'dark-orange',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.indigoDark),
+              base: getRadixColors(radixColors.orangeDark),
               'base-9-content': 'white',
             },
           },
