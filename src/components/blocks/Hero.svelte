@@ -2,35 +2,49 @@
   import {
     Section,
     Container,
-    Highlight,
-    Split,
     Button,
-    Image,
+    Flow,
+    Text,
+    Heading,
+    Highlight,
+    Video,
+    Panel,
   } from 'fulldev-ui'
 
   export let content: any
 </script>
 
-<Section class="dark pt-0">
+<Section class="pt-xl">
   <Container>
-    <Split center>
-      <Highlight class="large">
-        <span class="text-sm text-base-11">Lorem ipsum</span>
-        <h2>{content.heading}</h2>
-        <p>{content.textarea}</p>
-        <svelte:fragment slot="footer">
-          <Button
-            class="light-indigo"
-            variant="solid"
-            {...content.button_1}
-          />
-          <Button
-            class="light-indigo"
-            {...content.button_1}
-          />
-        </svelte:fragment>
+    <Flow>
+      <Video
+        ratio={10 / 3.97}
+        autoplay={true}
+        loop={true}
+        class="dark-orange overflow-hidden rounded-image bg-base-6 shadow-lg"
+        title="anti-slip-profiles"
+        id="831834222?h=db8094c60f"
+      />
+      <Highlight
+        row
+        center
+        class="large"
+      >
+        <Text
+          text={content.eyebrow}
+          class="light-orange !text-base-11"
+        />
+        <Heading
+          as="h1"
+          text={content.heading}
+        />
+        <Button
+          class="light-orange"
+          slot="actions"
+          {...content.button}
+          variant="solid"
+        />
       </Highlight>
-      <Image {...content.image} />
-    </Split>
+    </Flow>
   </Container>
 </Section>

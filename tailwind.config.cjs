@@ -18,10 +18,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      heading: '"Montserrat", sans-serif',
-      subheading: '"Roboto Mono", sans-serif',
-      base: '"Montserrat", sans-serif',
-      button: '"Montserrat", sans-serif',
+      heading: '"Open Sans", sans-serif',
+      subheading: '"Open Sans", sans-serif',
+      base: '"Open Sans", sans-serif',
+      button: '"Open Sans", sans-serif',
     },
     fontWeight: {
       heading: 700,
@@ -35,11 +35,11 @@ module.exports = {
       base: 1.625,
     },
     borderRadius: {
-      box: '24px',
+      box: '12px',
       card: '12px',
-      button: '8px',
-      input: '8px',
-      image: '4px',
+      image: '12px',
+      button: '6px',
+      input: '6px',
     },
   },
   plugins: [
@@ -69,19 +69,19 @@ module.exports = {
           },
         },
         {
-          name: 'light-indigo',
+          name: 'light-orange',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.indigo),
+              base: getRadixColors(radixColors.orange),
               'base-9-content': 'white',
             },
           },
         },
         {
-          name: 'dark-indigo',
+          name: 'dark-orange',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.indigoDark),
+              base: getRadixColors(radixColors.orangeDark),
               'base-9-content': 'white',
             },
           },

@@ -21,13 +21,9 @@ const site: Site = {
   logo: '/logo.svg',
   lang: 'nl',
   googleFonts: {
-    // Montserrat: {
-    //   wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-    //   ital: [400],
-    // },
-    // 'Roboto Mono': {
-    //   wght: [400],
-    // },
+    'Open Sans': {
+      wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
   },
 }
 

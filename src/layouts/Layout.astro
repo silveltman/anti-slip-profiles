@@ -8,13 +8,15 @@ const { seo } = Astro.props
 <!DOCTYPE html>
 <html
   lang={site.lang}
-  class="color-scheme-light light medium"
+  class="color-scheme-light medium"
 >
   <head>
     <Head {seo} />
   </head>
-  <body class="">
-    <slot />
+  <body class="light-orange bg-base-2">
+    <main class="light">
+      <slot />
+    </main>
     <style>
       /* Temporary, untill we cleaner solution. Needed to set the browsers scrollbar color theme */
       .color-scheme-dark {
