@@ -21,7 +21,7 @@
         ratio={10 / 3.97}
         autoplay={true}
         loop={true}
-        class="dark-orange overflow-hidden rounded-image bg-base-6 shadow-lg"
+        class="dark overflow-hidden rounded-image bg-base-6 shadow-lg"
         title="anti-slip-profiles"
         id="831834222?h=db8094c60f"
       />
