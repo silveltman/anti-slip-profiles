@@ -2101,10 +2101,10 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fulldev-ui@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.8.tgz#929a4fbbd990e924e3e4d2cd2f3bb7f12e88c763"
-  integrity sha512-csUq0P1hqRFiM0BtqF++27Na38LS7FBXP9eLQeq0OvJm6b4hEy4JKocR9nJIUuU2Xj5tagWPzuddiu+2vU6bww==
+fulldev-ui@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.9.tgz#67ad7e36df672ecda7fd4a33bbdcf4802ec9fa6e"
+  integrity sha512-cAIrdPm2iGGPCdyEbYbGOZZAJw+IGrJQKWHD8J/ejqJ5GzK3AfbiD7RJvVgqjxfJufulo+fUrauByYNNEZc38w==
   dependencies:
     "@radix-ui/colors" "^0.1.8"
     "@tabler/icons-svelte" "^2.20.0"

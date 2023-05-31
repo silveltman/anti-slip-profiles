@@ -13,7 +13,7 @@
   export let content: any
 </script>
 
-<Section class="product-split [&+.product-split_.order]:order-2">
+<Section class="product-split [&+.product-split_.order]:lg:order-2">
   <Container>
     <Flow
       row
