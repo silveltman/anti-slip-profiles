@@ -1,5 +1,7 @@
 <script lang="ts">
   import { Section, Container, Button } from 'fulldev-ui'
+
+  export let content: any
 </script>
 
 <Section>

@@ -2,33 +2,49 @@
   import {
     Section,
     Container,
-    Highlight,
     Button,
-    Image,
-    Stack,
+    Flow,
+    Text,
+    Heading,
+    Highlight,
+    Video,
+    Panel,
   } from 'fulldev-ui'
 
   export let content: any
 </script>
 
-<Section class="dark-orange py-0">
+<Section class="pt-xl">
   <Container>
-    <Stack>
-      <Image
-        src="/hero.png"
-        alt="Hero Image"
+    <Flow>
+      <Video
+        ratio={10 / 3.97}
+        autoplay={true}
+        loop={true}
+        class="dark-orange overflow-hidden rounded-image bg-base-6 shadow-lg"
+        title="anti-slip-profiles"
+        id="831834222?h=db8094c60f"
       />
-      <div class="lg:flex items-center justify-between">
-        <Highlight class="large !max-w-none">
-          <p class="text-base-11">Gepatenteerde Anti-Slip producten</p>
-          <h1>Nooit meer een gladde vlonder</h1>
-        </Highlight>
-        <Button
-          text="Bekijk Producten"
-          variant="solid"
-          class="h-fit"
+      <Highlight
+        row
+        center
+        class="large"
+      >
+        <Text
+          text={content.eyebrow}
+          class="light-orange !text-base-11"
         />
-      </div>
-    </Stack>
+        <Heading
+          as="h1"
+          text={content.heading}
+        />
+        <Button
+          class="light-orange"
+          slot="actions"
+          {...content.button}
+          variant="solid"
+        />
+      </Highlight>
+    </Flow>
   </Container>
 </Section>
