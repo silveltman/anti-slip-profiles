@@ -23,7 +23,7 @@
         >
           <Image
             slot="media"
-            src="/vlonder-close.jpg"
+            src="/product.jpg"
             alt="placeholder"
           />
           <Text
