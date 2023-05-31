@@ -19,7 +19,7 @@
       row
       center
     >
-      <div class="order col-span-3 flex w-full gap-md">
+      <div class="order flex w-full gap-md lg:col-span-3">
         <Image
           class="mt-xl"
           src="/vlonder-far.jpg"
@@ -31,7 +31,7 @@
           alt="image"
         />
       </div>
-      <Highlight class="col-span-2">
+      <Highlight class="lg:col-span-2">
         {#if content.eyebrow}
           <Text
             class="light-orange"
