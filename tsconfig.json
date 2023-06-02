@@ -15,6 +15,9 @@
       ],
       "@content/*": [
         "src/content/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
       ]
     },
     // "types": [

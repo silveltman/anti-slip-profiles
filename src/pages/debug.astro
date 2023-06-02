@@ -1,0 +1,17 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { getProducts } from '@utils/shopify'
+
+const products = await getProducts()
+const mappedProducts = products.map((prod) => {
+  return {
+    title: prod.title,
+    handle: prod.handle,
+  }
+})
+console.log(mappedProducts)
+---
+
+<Layout seo={null}>
+  <!-- Custom component go here -->
+</Layout>

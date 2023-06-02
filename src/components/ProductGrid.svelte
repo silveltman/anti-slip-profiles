@@ -9,34 +9,42 @@
     Image,
   } from 'fulldev-ui'
 
-  export let content: any
+  export let products: {
+    href: string
+    heading: string
+    image: {
+      src: string
+      alt: string
+    }
+    textarea: string
+    price: string
+  }[] = []
 </script>
 
 <Section>
   <Container>
     <Grid class="large">
-      {#each { length: 6 } as _, i}
+      {#each products as product}
         <Card
-          href="/"
+          href={product.href}
           box
           class="bg-transparent"
         >
           <Image
             slot="media"
-            src="/product.jpg"
-            alt="placeholder"
+            {...product.image}
           />
           <Text
             class="light-orange"
             secondary
-            text="€12,95"
+            text={product.price}
           />
           <Heading
             as="h4"
-            text={content.cards[0].heading}
+            text={product.heading}
           />
           <Text
-            text={content.cards[0].textarea}
+            text={product.textarea}
             class="!text-base-11"
           />
         </Card>

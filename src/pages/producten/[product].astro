@@ -1,0 +1,28 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { getProducts } from '@utils/shopify'
+import ProductSingle from '@components/ProductSingle.svelte'
+
+export async function getStaticPaths() {
+  const products = await getProducts()
+  return products.map((product) => ({
+    params: { product: product.handle },
+    props: { product },
+  }))
+}
+
+const { product } = Astro.props
+const mappedProduct = {
+  price: product.variants[0].priceV2.amount,
+  heading: product.title,
+  textarea: product.description,
+  images: product.images.map((img) => ({
+    src: img.src,
+    alt: img.altText,
+  })),
+}
+---
+
+<Layout seo={null}>
+  <ProductSingle product={mappedProduct} />
+</Layout>
