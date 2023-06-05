@@ -14,7 +14,7 @@
   export let content: any
 </script>
 
-<Section class="pt-xl">
+<Section class="pt-0">
   <Container>
     <Flow>
       <Video

@@ -1,6 +1,7 @@
 ---
 import site from '@data/site'
 import Head from '@components/helpers/Head.astro'
+import TheHeader from '@components/TheHeader.svelte'
 
 const { seo } = Astro.props
 ---
@@ -13,7 +14,9 @@ const { seo } = Astro.props
   <head>
     <Head {seo} />
   </head>
-  <body class="light-orange bg-base-2">
+  <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
+  <body class="light-orange overflow-visible bg-base-2">
+    <TheHeader />
     <main class="light">
       <slot />
     </main>

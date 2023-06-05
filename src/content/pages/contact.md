@@ -39,12 +39,12 @@ blocks:
       phone:
         icon: phone
         heading: Telefoon
-        text: 123-456-7890
+        text: Telefoonnummer Europa
         href: tel:123456789
       email:
         icon: email
         heading: Email
-        text: contact@mydomain.com
+        text: Email Europa
         href: mailto:contact@mydomain.com
       socials:
         - name: instagram
@@ -64,12 +64,12 @@ blocks:
       phone:
         icon: phone
         heading: Telefoon
-        text: 123-456-7890
+        text: Telefoonnummer Scandinavie
         href: tel:123456789
       email:
         icon: email
         heading: Email
-        text: contact@mydomain.com
+        text: Email Scandinavie
         href: mailto:contact@mydomain.com
       socials:
         - name: instagram
