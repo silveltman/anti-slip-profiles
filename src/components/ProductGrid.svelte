@@ -21,7 +21,7 @@
   }[] = []
 </script>
 
-<Section>
+<Section class="pt-xl">
   <Container>
     <Grid class="large">
       {#each products as product}

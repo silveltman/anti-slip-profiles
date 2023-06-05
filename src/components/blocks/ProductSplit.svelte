@@ -21,12 +21,12 @@
     >
       <div class="order flex w-full gap-md lg:col-span-3">
         <Image
-          class="mt-xl"
+          class="mt-xl shadow-lg"
           src="/vlonder-far.jpg"
           alt="image"
         />
         <Image
-          class="mb-xl"
+          class="mb-xl shadow-lg"
           src="/vlonder-close.jpg"
           alt="image"
         />

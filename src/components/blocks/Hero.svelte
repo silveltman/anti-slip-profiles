@@ -17,14 +17,18 @@
 <Section class="pt-0">
   <Container>
     <Flow>
-      <Video
-        ratio={10 / 3.97}
-        autoplay={true}
-        loop={true}
-        class="dark overflow-hidden rounded-image bg-base-6 shadow-lg"
-        title="anti-slip-profiles"
-        id="831834222?h=db8094c60f"
-      />
+      <div
+        class="dark overflow-hidden bg-base-1 max-md:-mx-4 max-md:rounded-[0px] md:rounded-box md:shadow-lg"
+      >
+        <Video
+          ratio={10 / 3.97}
+          autoplay={true}
+          loop={true}
+          class="w-full"
+          title="anti-slip-profiles"
+          id="831834222?h=db8094c60f"
+        />
+      </div>
       <Highlight
         row
         center
