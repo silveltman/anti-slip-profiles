@@ -1,47 +1,29 @@
 <script lang="ts">
   import {
+    Button,
+    Card,
     Container,
     Flow,
     Form,
-    Panel,
     Heading,
     Highlight,
+    Input,
+    Panel,
     Section,
     Text,
-    Input,
     Textarea,
-    Button,
+    Whatsapp,
   } from 'fulldev-ui'
-
-  type SupplierData = {
-    adres: string
-    email: string
-    form_key: string
-    map: string
-    phone: string
-  }
+  import {
+    IconBrandFacebook,
+    IconBrandInstagram,
+    IconBrandLinkedin,
+    IconMail,
+    IconMapPin,
+    IconPhoneCall,
+  } from '@tabler/icons-svelte'
 
   export let content: any
-
-  // @robert verplaatsen naar content/pages/contact.md
-  const suppliers: {
-    [key: string]: SupplierData
-  } = {
-    ned: {
-      adres: 'address netherlands',
-      email: 'info@antislipprofiles.com',
-      form_key: '',
-      map: 'map1.jpg',
-      phone: '+31 6 12345678',
-    },
-    scn: {
-      adres: 'address scandinavia',
-      email: 'info@antislipprofiles.com',
-      form_key: '',
-      map: 'map2.jpg',
-      phone: '+31 6 12345678',
-    },
-  }
 </script>
 
 <Section>
@@ -54,13 +36,13 @@
             text="Contact Anti-Slip Profiles"
           />
           <Text
-            text="Heeft u een vraag, opmerking of bericht voor Anti-Slip Profiles? Gebruikt u dan het onderstaande formulier. Anti-Slip Profiles neemt dan zo snel mogelijk contact met u op om uw vraag te beantwoorden."
+            text="Heeft u een vraag, opmerking of een bericht voor Anti-Slip Profiles? Gebruikt u dan het onderstaande formulier. Anti-Slip Profiles neemt dan zo snel mogelijk contact met u op om uw vraag te beantwoorden."
           />
         </Highlight>
-        {#each [suppliers.ned, suppliers.scn] as supplier}
+        {#each [content.suppliers.netherlands, content.suppliers.scandinavia] as supplier}
           <img
-            src="/contact/{supplier.map}"
-            alt="map"
+            src={supplier.map}
+            alt="Kaart"
           />
         {/each}
       </Flow>
@@ -69,14 +51,62 @@
           type="checkbox"
           class="peer"
         />
-        {#each [suppliers.ned, suppliers.scn] as supplier, i}
+        {#each [content.suppliers.netherlands, content.suppliers.scandinavia] as supplier, i}
           <Panel
-            class={i === 1
+            class="space-y-8 {i === 1
               ? 'hidden peer-checked:block'
-              : 'block peer-checked:hidden'}
+              : 'block peer-checked:hidden'}"
           >
-            <!-- @robert aanvullen met contactgegevens -->
-            {supplier.adres}
+            <div class="space-y-4">
+              <Card box class="bg-white">
+                <div class="flex flex-row items-center justify-center gap-x-4">
+                  <div class="basis-1/4">
+                    <Card box>
+                      <IconMapPin color='#f76808' />
+                    </Card>
+                  </div>
+                  <div class="basis-3/4">
+                    <strong><Text text="Plaats" /></strong>
+                    <Text
+                      text={supplier.address}
+                    />
+                  </div>
+                </div>
+              </Card>
+              <Card box class="bg-white">
+                <div class="flex flex-row items-center justify-center gap-x-4">
+                  <div class="basis-1/4">
+                    <Card box>
+                      <IconMail color='#f76808' />
+                    </Card>
+                  </div>
+                  <div class="basis-3/4">
+                    <strong><Text text="Email" /></strong>
+                    <Text
+                      text={supplier.email}
+                    />
+                  </div>
+                </div>
+              </Card>
+              <Card box class="bg-white">
+                <div class="flex flex-row items-center justify-center gap-x-4">
+                  <div class="basis-1/4">
+                    <Card box>
+                      <IconPhoneCall color='#f76808' />
+                    </Card>
+                  </div>
+                  <div class="basis-3/4">
+                    <strong><Text text="Telefoon" /></strong>
+                    <Text
+                      text={supplier.phone}
+                    />
+                  </div>
+                </div>
+              </Card>
+            </div>
+            <Flow row center>
+              <!-- socials -->
+            </Flow>
           </Panel>
           <Panel
             class={i === 1
@@ -85,7 +115,7 @@
           >
             <Form key={supplier.form_key}>
               <Input
-                label="naam"
+                label="Naam"
                 id="naam"
               />
               <Input
