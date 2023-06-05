@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props
 const mappedProduct = {
-  price: product.variants[0].priceV2.amount,
+  // price: product.variants[0].priceV2.amount,
   heading: product.title,
   textarea: product.description,
   images: product.images.map((img) => ({
