@@ -1,6 +1,5 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import { getProducts } from '@utils/shopify'
 import ProductSingle from '@components/ProductSingle.svelte'
 
 export async function getStaticPaths() {
@@ -21,10 +20,27 @@ const mappedProduct = {
     alt: img.altText,
   })),
 }
+
+import { getProducts } from '@utils/shopify'
+const products = await getProducts()
+const mappedProducts = products.map((prod) => {
+  return {
+    heading: prod.title,
+    textarea: prod.description,
+    image: {
+      src: prod.images[0]?.src,
+      alt: prod.images[0]?.altText,
+    },
+    price: products[0].variants[0].priceV2.amount,
+    href: `/producten/${prod.handle}`,
+  }
+})
 ---
 
 <Layout seo={null}>
   <ProductSingle product={mappedProduct} />
 
   <!-- @Robert deze pagina afmaken -->
+  <!-- Block maken met links content en recht ruimte voor accordion -->
+  <!-- daaronder de carousel met de producten, met mapped products -->
 </Layout>
