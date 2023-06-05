@@ -12,23 +12,18 @@
     Section,
     Text,
     Textarea,
-    Whatsapp,
+    Icon,
   } from 'fulldev-ui'
-  import {
-    IconBrandFacebook,
-    IconBrandInstagram,
-    IconBrandLinkedin,
-    IconMail,
-    IconMapPin,
-    IconPhoneCall,
-  } from '@tabler/icons-svelte'
 
   export let content: any
 </script>
 
 <Section>
   <Container>
-    <Flow row>
+    <Flow
+      row
+      class="items-start"
+    >
       <Flow>
         <Highlight>
           <Heading
@@ -39,81 +34,53 @@
             text="Heeft u een vraag, opmerking of een bericht voor Anti-Slip Profiles? Gebruikt u dan het onderstaande formulier. Anti-Slip Profiles neemt dan zo snel mogelijk contact met u op om uw vraag te beantwoorden."
           />
         </Highlight>
-        {#each [content.suppliers.netherlands, content.suppliers.scandinavia] as supplier}
-          <img
-            src={supplier.map}
-            alt="Kaart"
-          />
-        {/each}
+        <img
+          src={content.europe._map}
+          alt="Kaart"
+          class="map max-lg:hidden"
+        />
       </Flow>
       <Flow>
         <input
           type="checkbox"
           class="peer"
         />
-        {#each [content.suppliers.netherlands, content.suppliers.scandinavia] as supplier, i}
+        {#each [content.europe, content.scandinavia] as supplier, i}
           <Panel
-            class="space-y-8 {i === 1
-              ? 'hidden peer-checked:block'
-              : 'block peer-checked:hidden'}"
+            class="!bg-base-1
+          {i === 0 ? 'flex peer-checked:hidden' : 'hidden peer-checked:flex'}
+          "
           >
-            <div class="space-y-4">
-              <Card box class="bg-white">
-                <div class="flex flex-row items-center justify-center gap-x-4">
-                  <div class="basis-1/4">
-                    <Card box>
-                      <IconMapPin color='#f76808' />
-                    </Card>
-                  </div>
-                  <div class="basis-3/4">
-                    <strong><Text text="Plaats" /></strong>
+            <Flow>
+              {#each [supplier.address, supplier.phone, supplier.email] as item}
+                <!-- content here -->
+                <div class="flex items-center gap-md">
+                  <Button
+                    href={item.href}
+                    class="light-orange"
+                  >
+                    <Icon name={item.icon} />
+                  </Button>
+                  <div class="flex flex-col gap-xs">
+                    <Heading
+                      secondary
+                      text={item.heading}
+                    />
                     <Text
-                      text={supplier.address}
+                      secondary
+                      text={item.text}
                     />
                   </div>
                 </div>
-              </Card>
-              <Card box class="bg-white">
-                <div class="flex flex-row items-center justify-center gap-x-4">
-                  <div class="basis-1/4">
-                    <Card box>
-                      <IconMail color='#f76808' />
-                    </Card>
-                  </div>
-                  <div class="basis-3/4">
-                    <strong><Text text="Email" /></strong>
-                    <Text
-                      text={supplier.email}
-                    />
-                  </div>
-                </div>
-              </Card>
-              <Card box class="bg-white">
-                <div class="flex flex-row items-center justify-center gap-x-4">
-                  <div class="basis-1/4">
-                    <Card box>
-                      <IconPhoneCall color='#f76808' />
-                    </Card>
-                  </div>
-                  <div class="basis-3/4">
-                    <strong><Text text="Telefoon" /></strong>
-                    <Text
-                      text={supplier.phone}
-                    />
-                  </div>
-                </div>
-              </Card>
-            </div>
-            <Flow row center>
-              <!-- socials -->
+              {/each}
             </Flow>
           </Panel>
           <Panel
-            class={i === 1
-              ? 'hidden peer-checked:block'
-              : 'block peer-checked:hidden'}
+            class="!bg-base-1
+          {i === 0 ? 'flex peer-checked:hidden' : 'hidden peer-checked:flex'}
+          "
           >
-            <Form key={supplier.form_key}>
+            <Form key={supplier._form_key}>
               <Input
                 label="Naam"
                 id="naam"

@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import { getProducts } from '@utils/shopify'
+import { Icon } from 'fulldev-ui'
 
 const products = await getProducts()
 const mappedProducts = products.map((prod) => {
@@ -9,9 +10,27 @@ const mappedProducts = products.map((prod) => {
     handle: prod.handle,
   }
 })
-console.log(mappedProducts)
+// console.log(mappedProducts)
 ---
 
 <Layout seo={null}>
-  <!-- Custom component go here -->
+  <i class="material-symbols-rounded material-symbols-outlined">check_circle</i>
+  <Icon
+    size={48}
+    fill
+  />
+  <Icon
+    name="car"
+    size={48}
+    fill
+  />
+  <Icon
+    size={48}
+    fill
+  />
+  <Icon
+    name="location_on"
+    size={48}
+    fill
+  />
 </Layout>
