@@ -731,6 +731,11 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
+"@popperjs/core@^2.11.8", "@popperjs/core@^2.9.3":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
 "@proload/core@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@proload/core/-/core-0.3.3.tgz#0a30c5ab69e21254b339813c674a6197a42337c3"
@@ -743,6 +748,11 @@
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@radix-ui/colors/-/colors-0.1.8.tgz#b08c62536fc462a87632165fb28e9b18f9bd047e"
   integrity sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==
+
+"@rodneylab/svelte-social-icons@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@rodneylab/svelte-social-icons/-/svelte-social-icons-0.0.26.tgz#566cd528d7f66b25877487971eb834e8d265486e"
+  integrity sha512-VnCjCpTZvpAsVcI5S7bKDPJQLA2a29Prx+1Dwvar/AebFypzKOxG0p2Pd/msmvdUEOuvokaATAUWH7Nrp4xVUA==
 
 "@rollup/plugin-yaml@^4.1.0":
   version "4.1.0"
@@ -1460,6 +1470,11 @@ ci-info@^3.3.1:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 clean-css@~5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.3.2.tgz#70ecc7d4d4114921f5d298349ff86a31a9975224"
@@ -2081,6 +2096,23 @@ find-yarn-workspace-root2@1.2.16:
     micromatch "^4.0.2"
     pkg-dir "^4.2.0"
 
+flowbite-svelte@^0.37.4:
+  version "0.37.4"
+  resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.37.4.tgz#33d8d8d51ad3a37674a381aee8f1c72b80e44abb"
+  integrity sha512-zJcxxZEs4msREqSe/lQzn5J2w823YNBsmBqjES3T9NxKvJE8mTGB1VVzHMrEcaWcwONaoQ7LRfi4lcV5b6FqHw==
+  dependencies:
+    "@popperjs/core" "^2.11.8"
+    classnames "^2.3.2"
+    flowbite "^1.6.5"
+
+flowbite@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/flowbite/-/flowbite-1.6.5.tgz#a0eb2f3f0cf5098f802004df635e2717efc52bbc"
+  integrity sha512-eI4h3pIRI9d7grlYq14r0A01KUtw7189sPLLx/O2i7JyPEWpbleScfYuEc48XTeNjk1xxm/JHgZkD9kjyOWAlA==
+  dependencies:
+    "@popperjs/core" "^2.9.3"
+    mini-svg-data-uri "^1.4.3"
+
 fraction.js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
@@ -2101,13 +2133,13 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fulldev-ui@^0.5.9:
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.9.tgz#67ad7e36df672ecda7fd4a33bbdcf4802ec9fa6e"
-  integrity sha512-cAIrdPm2iGGPCdyEbYbGOZZAJw+IGrJQKWHD8J/ejqJ5GzK3AfbiD7RJvVgqjxfJufulo+fUrauByYNNEZc38w==
+fulldev-ui@^0.5.11:
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.11.tgz#cec8b55015a77ab998e8010e3b7f23c1c0f255de"
+  integrity sha512-8iWblBhLeh7K8eXHadScD/hGPpUjZwm6EhYe6R5mtDXivpm2tgsFB97GQlv5Fweo+XkNHFMeqsANs6BBPyE5QQ==
   dependencies:
     "@radix-ui/colors" "^0.1.8"
-    "@tabler/icons-svelte" "^2.20.0"
+    "@rodneylab/svelte-social-icons" "^0.0.26"
     "@tailwindcss/aspect-ratio" "^0.4.2"
     "@tailwindcss/forms" "^0.5.3"
     "@tailwindcss/nesting" "^0.0.0-insiders.565cd3e"
@@ -3232,7 +3264,7 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
-mini-svg-data-uri@^1.2.3, mini-svg-data-uri@^1.4.4:
+mini-svg-data-uri@^1.2.3, mini-svg-data-uri@^1.4.3, mini-svg-data-uri@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
   integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==

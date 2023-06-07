@@ -1,0 +1,10 @@
+address: 3605 Parker Rd.   Adres lorem ipsum
+phone: 123-456-7890
+email: contact@mydomain.com
+socials:
+  - name: instagram
+    url: https://www.instagram.com/
+  - name: linkedin
+    url: https://www.linkedin.com/
+  - name: facebook
+    url: https://www.facebook.com/

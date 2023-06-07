@@ -1,10 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import { getProducts } from '@utils/shopify'
 import ProductSingle from '@components/ProductSingle.svelte'
+import ProductCarousel from '@components/ProductCarousel.svelte'
+import ProductDetails from '@components/ProductDetails.svelte'
 
 export async function getStaticPaths() {
   const products = await getProducts()
+  console.log(products[0].variants)
   return products.map((product) => ({
     params: { product: product.handle },
     props: { product },
@@ -15,16 +17,39 @@ const { product } = Astro.props
 const mappedProduct = {
   // price: product.variants[0].priceV2.amount,
   heading: product.title,
-  textarea: product.description,
+  description: product.description,
+  descriptionHtml: product.descriptionHtml,
   images: product.images.map((img) => ({
     src: img.src,
     alt: img.altText,
   })),
 }
+
+import { getProducts } from '@utils/shopify'
+const products = await getProducts()
+const mappedProducts = products.map((prod) => {
+  return {
+    heading: prod.title,
+    textarea: prod.description,
+    image: {
+      src: prod.images[0]?.src,
+      alt: prod.images[0]?.altText,
+    },
+    price: products[0].variants[0].priceV2.amount,
+    href: `/producten/${prod.handle}`,
+  }
+})
 ---
 
 <Layout seo={null}>
-  <ProductSingle product={mappedProduct} />
+  <ProductSingle
+    client:load
+    product={product}
+  />
+  <ProductDetails product={mappedProduct} />
+  <ProductCarousel products={mappedProducts} />
 
   <!-- @Robert deze pagina afmaken -->
+  <!-- Block maken met links content en recht ruimte voor accordion -->
+  <!-- daaronder de carousel met de producten, met mapped products -->
 </Layout>

@@ -11,7 +11,7 @@
   export let content: any
 </script>
 
-<Section class="dark pb-0 pt-xl">
+<Section class="dark pb-0 pt-0">
   <Container>
     <Panel>
       <Highlight>

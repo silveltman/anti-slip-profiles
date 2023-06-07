@@ -14,30 +14,47 @@
   } from 'fulldev-ui'
 
   export let product
+
+  const images = product.images.map((img) => ({
+    src: img.src,
+    alt: img.altText,
+  }))
+
+  const price = `€${product.variants[0].priceV2.amount}`
+
+  const sizes = product.variants.map((variant) => variant.title)
+
+  function handleClick() {
+    add
+    console.log('click')
+  }
 </script>
 
-<Section>
+<Section class="max-lg:pt-0">
   <Container>
     <Flow row>
       <Gallery class="lg:col-span-2">
-        {#each product.images as image}
+        {#each images as image}
           <Image {...image} />
         {/each}
       </Gallery>
       <Highlight class="sticky top-lg">
-        <Heading text={product.heading} />
+        <Heading text={product.title} />
         <Text
-          text={product.price}
+          text={price}
           class="light-orange !text-base-11 large"
         />
-        <Text text={product.textarea} />
+        <Text>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+          necessitatibus aperiam facilis repudiandae veniam!
+        </Text>
         <svelte:fragment slot="actions">
           <div class="flex w-full justify-stretch gap-sm">
             <Select
               class="flex-1 shrink-0"
               id="groefdikte"
               placeholder="Kies groefdikte"
-              options={['6mm', '7-15mm', '12-18mm']}
+              options={sizes}
             />
             <Button
               class="light-orange flex-1"
@@ -49,14 +66,14 @@
           <div class="flex w-full gap-sm">
             <Select
               placeholder="1"
-              options={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+              options={[1, 2, 3, 4, 5]}
               id="aantal"
             />
             <Button
               variant="solid"
+              on:click={handleClick}
               class="light-orange w-full"
               text="Voeg toe aan winkelwagen"
-              href="#"
             />
           </div>
         </svelte:fragment>

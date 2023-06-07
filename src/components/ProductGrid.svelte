@@ -7,6 +7,7 @@
     Grid,
     Card,
     Image,
+    Ratio,
   } from 'fulldev-ui'
 
   export let products: {
@@ -21,19 +22,21 @@
   }[] = []
 </script>
 
-<Section>
+<Section class="pt-xl">
   <Container>
-    <Grid class="large">
+    <Grid class="items-start large">
       {#each products as product}
         <Card
           href={product.href}
           box
           class="bg-transparent"
         >
-          <Image
+          <Ratio
+            ratio={4 / 3}
             slot="media"
-            {...product.image}
-          />
+          >
+            <Image {...product.image} />
+          </Ratio>
           <Text
             class="light-orange"
             secondary
@@ -43,10 +46,14 @@
             as="h4"
             text={product.heading}
           />
-          <Text
+          <!-- <Text
             text={product.textarea}
             class="!text-base-11"
-          />
+          /> -->
+          <Text class="!text-base-11">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+            necessitatibus aperiam facilis repudiandae veniam!
+          </Text>
         </Card>
       {/each}
     </Grid>
