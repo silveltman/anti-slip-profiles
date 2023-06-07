@@ -3,8 +3,8 @@ import Client from 'shopify-buy'
 
 // Initializing a client to return content in the store's primary language
 const client = Client.buildClient({
-  domain: 'fulldev-storefront.myshopify.com',
-  storefrontAccessToken: '3f268ce23e3d4290378a53717915da12',
+  domain: 'anti-slip-profiles.myshopify.com',
+  storefrontAccessToken: '39affaaa4eed2e40bd3ae3039736b182',
 })
 
 // Fetch all products in your shop
@@ -34,20 +34,20 @@ export async function getProducts() {
 //   client.collection.fetchWithProducts(collectionId, options)
 // }
 
-// // Create a checkout
-// async function createCheckout() {
-//   return client.checkout.create()
-// }
+// Create a checkout
+async function createCheckout() {
+  return client.checkout.create()
+}
 
-// // Update checkout attributes
-// async function updateCheckoutAttributes(checkoutId: string, input: object) {
-//   return client.checkout.updateAttributes(checkoutId, input)
-// }
+// Update checkout attributes
+async function updateCheckoutAttributes(checkoutId: string, input: object) {
+  return client.checkout.updateAttributes(checkoutId, input)
+}
 
-// // Add item(s) to the checkout
-// async function addLineItems(checkoutId: string, lineItemsToAdd: object[]) {
-//   return client.checkout.addLineItems(checkoutId, lineItemsToAdd)
-// }
+// Add item(s) to the checkout
+async function addLineItems(checkoutId: string, lineItemsToAdd: object[]) {
+  return client.checkout.addLineItems(checkoutId, lineItemsToAdd)
+}
 
 // // Update item(s) in the checkout
 // async function updateLineItems(

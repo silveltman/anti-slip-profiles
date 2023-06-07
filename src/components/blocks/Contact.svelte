@@ -12,6 +12,7 @@
     Section,
     Text,
     Textarea,
+    Social,
     Icon,
   } from 'fulldev-ui'
 
@@ -73,6 +74,24 @@
                   </div>
                 </div>
               {/each}
+              <div class="flex gap-sm">
+                <Social
+                  name="facebook"
+                  href="#"
+                />
+                <Social
+                  name="instagram"
+                  href="#"
+                />
+                <Social
+                  name="linkedin"
+                  href="#"
+                />
+                <Social
+                  name="email"
+                  href="#"
+                />
+              </div>
             </Flow>
           </Panel>
           <Panel
@@ -81,24 +100,57 @@
           "
           >
             <Form key={supplier._form_key}>
-              <Input
-                label="Naam"
-                id="naam"
-              />
-              <Input
-                label="Email"
-                id="email"
-                type="email"
-              />
-              <Input
-                label="Telefoon"
-                id="telefoon"
-                type="tel"
-              />
-              <Textarea
-                label="Bericht"
-                id="bericht"
-              />
+              <div class="flex flex-col">
+                <Text
+                  secondary
+                  class="!text-base-11"
+                  as="label"
+                  text="Naam"
+                />
+                <Input
+                  label="Naam"
+                  id="naam"
+                />
+              </div>
+              <div class="flex flex-col">
+                <Text
+                  secondary
+                  class="!text-base-11"
+                  as="label"
+                  text="Email"
+                />
+                <Input
+                  label="Email"
+                  id="email"
+                  type="email"
+                />
+              </div>
+              <div class="flex flex-col">
+                <Text
+                  secondary
+                  class="!text-base-11"
+                  as="label"
+                  text="Telefoon"
+                />
+                <Input
+                  label="Telefoon"
+                  id="telefoon"
+                  type="tel"
+                />
+              </div>
+              <div class="flex flex-col">
+                <Text
+                  secondary
+                  class="!text-base-11"
+                  as="label"
+                  text="Bericht"
+                />
+                <Textarea
+                  label="Bericht"
+                  id="bericht"
+                />
+              </div>
+
               <Button
                 variant="solid"
                 type="submit"

@@ -1,9 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import ProductSingle from '@components/ProductSingle.svelte'
+import ProductCarousel from '@components/ProductCarousel.svelte'
+import ProductDetails from '@components/ProductDetails.svelte'
 
 export async function getStaticPaths() {
   const products = await getProducts()
+  console.log(products[0].variants)
   return products.map((product) => ({
     params: { product: product.handle },
     props: { product },
@@ -14,7 +17,8 @@ const { product } = Astro.props
 const mappedProduct = {
   // price: product.variants[0].priceV2.amount,
   heading: product.title,
-  textarea: product.description,
+  description: product.description,
+  descriptionHtml: product.descriptionHtml,
   images: product.images.map((img) => ({
     src: img.src,
     alt: img.altText,
@@ -38,7 +42,12 @@ const mappedProducts = products.map((prod) => {
 ---
 
 <Layout seo={null}>
-  <ProductSingle product={mappedProduct} />
+  <ProductSingle
+    client:load
+    product={product}
+  />
+  <ProductDetails product={mappedProduct} />
+  <ProductCarousel products={mappedProducts} />
 
   <!-- @Robert deze pagina afmaken -->
   <!-- Block maken met links content en recht ruimte voor accordion -->

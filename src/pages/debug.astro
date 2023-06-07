@@ -1,7 +1,10 @@
 ---
+import AddToCartForm from '@components/AddToCartForm.svelte'
 import Layout from '@layouts/Layout.astro'
 import { getProducts } from '@utils/shopify'
-import { Icon } from 'fulldev-ui'
+import { Container, Flow, Button } from 'fulldev-ui'
+
+// import { AccordionItem, Accordion, Button } from 'flowbite-svelte'
 
 const products = await getProducts()
 const mappedProducts = products.map((prod) => {
@@ -14,23 +17,18 @@ const mappedProducts = products.map((prod) => {
 ---
 
 <Layout seo={null}>
-  <i class="material-symbols-rounded material-symbols-outlined">check_circle</i>
-  <Icon
-    size={48}
-    fill
+  <!-- <Container>
+    <Flow row>
+      <AddToCartForm product={products[0]} />
+    </Flow>
+  </Container>
+
+  <Button
+    variant="ringed"
+    text="Hello"
   />
-  <Icon
-    name="car"
-    size={48}
-    fill
-  />
-  <Icon
-    size={48}
-    fill
-  />
-  <Icon
-    name="location_on"
-    size={48}
-    fill
-  />
+
+  <!-- <Accordion>
+    <AccordionItem op />
+  </Accordion> -->
 </Layout>

@@ -3,6 +3,7 @@ import site from '@data/site'
 import Head from '@components/helpers/Head.astro'
 import TheHeader from '@components/TheHeader.svelte'
 import TheFooter from '@components/TheFooter.svelte'
+import { Whatsapp } from 'fulldev-ui'
 
 const { seo } = Astro.props
 ---
@@ -17,10 +18,11 @@ const { seo } = Astro.props
   </head>
   <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
   <body class="light-orange overflow-visible bg-base-2">
-    <TheHeader />
+    <TheHeader client:load />
     <main class="light">
       <slot />
     </main>
+    <Whatsapp tel="#" />
     <TheFooter />
     <style>
       /* Temporary, untill we cleaner solution. Needed to set the browsers scrollbar color theme */
