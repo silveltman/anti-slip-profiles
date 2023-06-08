@@ -42,8 +42,8 @@ blocks:
     textarea: |
       Het gepatenteerde vlonder antislip-profiel is voorzien van een antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm of schroeven! Voor zowel hout als composiet vlonderdelen en in alle seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
     button:
-      text: Bekijk product
-      href: '/producten'
+      text: Ga naar product
+      href: '/producten/anti-slip-profiel®'
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
@@ -58,8 +58,8 @@ blocks:
     textarea: |
       Het gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a. galerijen waar men hinder ondervindt van zand en (regen)water wat door de groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven gemonteerd!
     button:
-      text: Bekijk product
-      href: '/producten'
+      text: Ga naar product
+      href: '/producten/afdicht-profiel®'
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
@@ -72,7 +72,8 @@ blocks:
     heading: Benieuwd hoeveel je nodig hebt?
     button:
       text: Bekijk inmeetinstructies
-      href: '/producten'
+      href: '/inmeetinstructies.pdf'
+      target: _blank
 
   anti-slip_strook:
     _component: ProductSplit
@@ -80,7 +81,7 @@ blocks:
     textarea: |
       Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten vlonder i.v.m. de schroefgaten.
     button:
-      text: Bekijk product
+      text: Ga naar product
       href: '/producten'
     image_1:
       src: https://unsplash.it/400/1200?random=1

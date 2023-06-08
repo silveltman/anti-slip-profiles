@@ -1,34 +1,15 @@
 ---
-import AddToCartForm from '@components/AddToCartForm.svelte'
+import AddToCartForm from '@components/shopify/AddToCartForm.svelte'
 import Layout from '@layouts/Layout.astro'
-import { getProducts } from '@utils/shopify'
-import { Container, Flow, Button } from 'fulldev-ui'
 
-// import { AccordionItem, Accordion, Button } from 'flowbite-svelte'
+import { getProducts, getProduct } from '@utils/shopifyV3'
 
 const products = await getProducts()
-const mappedProducts = products.map((prod) => {
-  return {
-    title: prod.title,
-    handle: prod.handle,
-  }
-})
-// console.log(mappedProducts)
 ---
 
 <Layout seo={null}>
-  <!-- <Container>
-    <Flow row>
-      <AddToCartForm product={products[0]} />
-    </Flow>
-  </Container>
-
-  <Button
-    variant="ringed"
-    text="Hello"
+  <AddToCartForm
+    client:load
+    productId={products[0].id}
   />
-
-  <!-- <Accordion>
-    <AccordionItem op />
-  </Accordion> -->
 </Layout>

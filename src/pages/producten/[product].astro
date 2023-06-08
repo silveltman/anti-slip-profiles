@@ -4,6 +4,29 @@ import ProductSingle from '@components/ProductSingle.svelte'
 import ProductCarousel from '@components/ProductCarousel.svelte'
 import ProductDetails from '@components/ProductDetails.svelte'
 
+export const produxtQuery = `
+{
+  products(first: 250) {
+    nodes {
+      id
+      title
+      handle
+      description(truncateAt: 176)
+      descriptionHtml
+      featuredImage {
+        altText
+        url
+      }
+      priceRange {
+        minVariantPrice {
+          amount
+        }
+      }
+    }
+  }
+}
+`
+
 export async function getStaticPaths() {
   const products = await getProducts()
   console.log(products[0].variants)

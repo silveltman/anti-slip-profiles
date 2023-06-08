@@ -65,6 +65,7 @@
           alt="Logo Anti-slip Profiles"
         />
         <Text
+          class="!text-base-11"
           secondary
           text={footer.textarea}
         />

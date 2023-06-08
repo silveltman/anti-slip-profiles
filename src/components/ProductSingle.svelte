@@ -60,13 +60,17 @@
               class="light-orange flex-1"
               variant="soft"
               text="Inmeet instructies"
-              href="#"
+              href="/inmeetinstructies.pdf"
+              target="_blank"
             />
           </div>
           <div class="flex w-full gap-sm">
-            <Select
-              placeholder="1"
-              options={[1, 2, 3, 4, 5]}
+            <Input
+              class="min-w-0 shrink"
+              type="number"
+              value="1"
+              size="10"
+              maxlength="4"
               id="aantal"
             />
             <Button

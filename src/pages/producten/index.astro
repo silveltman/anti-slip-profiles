@@ -5,23 +5,11 @@ import { getProducts } from '@utils/shopify'
 import Blocks from '@components/helpers/Blocks.astro'
 import ProductGrid from '@components/ProductGrid.svelte'
 
+import { fetchData, productsQuery } from '@utils/shopifyV2'
+
 const page = await getEntryBySlug('pages', 'producten')
 
-const products = await getProducts()
-const mappedProducts = products.map((prod) => {
-  return {
-    heading: prod.title,
-    textarea: prod.description,
-    image: {
-      src: prod.images[0]?.src,
-      alt: prod.images[0]?.altText,
-    },
-    price: products[0].variants[0].priceV2.amount,
-    href: `/producten/${prod.handle}`,
-  }
-})
-
-console.log(products[0].variants)
+const { products } = await fetchData(productsQuery)
 ---
 
 <Layout seo={null}>
@@ -29,5 +17,5 @@ console.log(products[0].variants)
     pageData={page.data}
     keys={['hero']}
   />
-  <ProductGrid products={mappedProducts} />
+  <ProductGrid products={products} />
 </Layout>

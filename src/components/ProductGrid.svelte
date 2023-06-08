@@ -10,24 +10,31 @@
     Ratio,
   } from 'fulldev-ui'
 
-  export let products: {
-    href: string
-    heading: string
-    image: {
-      src: string
-      alt: string
+  export let products
+  let nodes: {
+    id: string
+    title: string
+    handle: string
+    description: string
+    featuredImage: {
+      url: string
+      altText: string
     }
-    textarea: string
-    price: string
-  }[] = []
+    priceRange: {
+      minVariantPrice: {
+        amount: string
+        currencyCode: string
+      }
+    }
+  }[] = products.nodes
 </script>
 
 <Section class="pt-xl">
   <Container>
     <Grid class="items-start large">
-      {#each products as product}
+      {#each nodes as product}
         <Card
-          href={product.href}
+          href="/producten/{product.handle}"
           box
           class="bg-transparent"
         >
@@ -35,25 +42,24 @@
             ratio={4 / 3}
             slot="media"
           >
-            <Image {...product.image} />
+            <Image
+              src={product.featuredImage.url}
+              alt={product.featuredImage.altText}
+            />
           </Ratio>
           <Text
             class="light-orange"
             secondary
-            text={product.price}
+            text={product.priceRange.minVariantPrice.amount}
           />
           <Heading
             as="h4"
-            text={product.heading}
+            text={product.title}
           />
-          <!-- <Text
-            text={product.textarea}
+          <Text
+            text={product.description}
             class="!text-base-11"
-          /> -->
-          <Text class="!text-base-11">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-            necessitatibus aperiam facilis repudiandae veniam!
-          </Text>
+          />
         </Card>
       {/each}
     </Grid>
