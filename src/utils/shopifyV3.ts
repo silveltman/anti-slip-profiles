@@ -3,6 +3,8 @@ import {
   ProductsQuery,
   ProductQuery,
   VariantBySelectedOptionsQuery,
+  CartCreateMutation,
+  CartLinesAddMutation,
 } from './graphql'
 
 export async function fetchStorefront(query: string, variables = {}) {
@@ -39,16 +41,19 @@ export async function fetchStorefront(query: string, variables = {}) {
   }
 }
 
+// Return 250 products
 export async function getProducts(first: number = 250) {
   const response = await fetchStorefront(ProductsQuery, { first })
   return response?.products.nodes
 }
 
+// Return product by id
 export async function getProduct(id: string) {
   const response = await fetchStorefront(ProductQuery, { id })
   return response?.product
 }
 
+// Return product variant by selected options
 export async function getVariantBySelectedOptions(
   id: string,
   selectedOptions: { name: string; value: string }[]
@@ -57,5 +62,34 @@ export async function getVariantBySelectedOptions(
     id,
     selectedOptions,
   })
-  return response
+  return response.product.variantBySelectedOptions
+}
+
+// Create cart and return cart object
+async function createCart(merchandiseId: string, quantity: number) {
+  const response = await fetchStorefront(CartCreateMutation, {
+    merchandiseId,
+    quantity,
+  })
+  return response.cartCreate.cart
+}
+
+// Add to cart or create cart if none exists and return cart object
+export async function addToCart(merchandiseId: string, quantity: number) {
+  const cartId = localStorage.getItem('cartId')
+  console.log('cartId in localstorage:', cartId)
+  if (cartId) {
+    const addedCart = await fetchStorefront(CartLinesAddMutation, {
+      cartId,
+      merchandiseId,
+      quantity,
+    })
+    console.log('Cart with added line:', addedCart)
+    return addedCart.cartLinesAdd.cart
+  } else {
+    const createdCart = await createCart(merchandiseId, quantity)
+    console.log('Created cart:', createdCart)
+    localStorage.setItem('cartId', createdCart.id)
+    return createdCart
+  }
 }

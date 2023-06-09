@@ -36,15 +36,66 @@ fragment productFragment on Product {
   }
 }
 `
-export const ProductsQuery = `#graphql
-    query ($first: Int!) {
-        products(first: $first) {
-            nodes {
-                ...productFragment
-            }
-        }
+
+const CART_FRAGMENT = `#graphql
+  fragment cartFragment on Cart {
+    id
+    totalQuantity
+    checkoutUrl
+    cost {
+      totalAmount {
+        amount
+        currencyCode
+      }
     }
-    ${PRODUCT_FRAGMENT}
+    lines(first: 100) {
+      nodes {
+        id
+        quantity
+        merchandise {
+          ...on ProductVariant {
+            id
+            title
+            image {
+              url
+              altText
+              width
+              height
+            }
+            product {
+              handle
+              title
+            }
+          }
+        }
+        cost {
+          amountPerQuantity{
+            amount
+            currencyCode
+          }
+          subtotalAmount {
+            amount
+            currencyCode
+          }
+          totalAmount {
+            amount
+            currencyCode
+          }
+        }
+      }
+    }
+  }
+`
+
+export const ProductsQuery = `#graphql
+  query ($first: Int!) {
+      products(first: $first) {
+          nodes {
+              ...productFragment
+          }
+      }
+  }
+  ${PRODUCT_FRAGMENT}
 `
 
 export const ProductQuery = `#graphql
@@ -62,7 +113,33 @@ export const VariantBySelectedOptionsQuery = `#graphql
       variantBySelectedOptions(selectedOptions: $selectedOptions) {
         id
         title
+        availableForSale
       }
     }
   }
+`
+
+export const CartCreateMutation = `#graphql
+  mutation ($merchandiseId: ID!, $quantity: Int = 1) {
+    cartCreate(input: {lines: {merchandiseId: $merchandiseId, quantity: $quantity}}) {
+      cart {
+        ...cartFragment
+      }
+    }
+  }
+  ${CART_FRAGMENT}
+`
+
+export const CartLinesAddMutation = `#graphql
+  mutation MyMutation($cartId: ID!, $merchandiseId: ID!, $quantity: Int = 1) {
+    cartLinesAdd(
+      cartId: $cartId
+      lines: {merchandiseId: $merchandiseId, quantity: $quantity}
+    ) {
+      cart {
+        ...cartFragment
+      }
+    }
+  }
+  ${CART_FRAGMENT}
 `
