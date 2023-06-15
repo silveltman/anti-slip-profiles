@@ -1,4 +1,5 @@
 <script lang="ts">
+  // @Robert dit component is een wrapper voor de CartLines component, waarin de items die in de winkelwagen zitten wroden weergegeven.
   import site from '@data/site'
   import header from '@data/header.yml'
   import {

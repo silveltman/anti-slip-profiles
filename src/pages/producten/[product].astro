@@ -3,7 +3,7 @@ import Layout from '@layouts/Layout.astro'
 import ProductSingle from '@components/ProductSingle.svelte'
 import ProductCarousel from '@components/ProductCarousel.svelte'
 import ProductDetails from '@components/ProductDetails.svelte'
-import { getProducts } from '@utils/shopifyV3'
+import { getProducts } from '@utils/shopify'
 
 export async function getStaticPaths() {
   const products = await getProducts()

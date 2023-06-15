@@ -44,10 +44,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('rippleui')({
-      defaultStyle: false,
-      themes: [],
-    }),
     require('tailwindcss-themer')({
       themes: [
         {

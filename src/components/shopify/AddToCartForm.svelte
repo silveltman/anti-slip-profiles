@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { addToCart } from '@utils/shopifyV3'
+  // @Robert dit component werkt volledig. Het voegt een product-variant toe aan de cart
+  import { addToCart } from '@utils/shopify'
   import { Button, Select, Input, Text } from 'fulldev-ui'
 
   export let product

@@ -1,15 +1,22 @@
 ---
+// @Robert ddeze pagina kun je gebruiken om componenten te previewen.
+
 import AddToCartForm from '@components/shopify/AddToCartForm.svelte'
+import CartLines from '@components/shopify/CartLines.svelte'
 import Layout from '@layouts/Layout.astro'
 
-import { getProducts, getProduct } from '@utils/shopifyV3'
+import { getProducts, getProduct } from '@utils/shopify'
 
 const products = await getProducts()
 ---
 
 <Layout seo={null}>
+  <!-- Dit component voegt een item toe aan de winkelwagen -->
   <AddToCartForm
     client:load
     product={products[0]}
   />
+
+  <!-- Dit component laat de inhoud van de winkelwagen zien. Hieraan kun jij werken. -->
+  <CartLines />
 </Layout>

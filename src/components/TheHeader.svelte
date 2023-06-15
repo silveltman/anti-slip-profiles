@@ -1,7 +1,6 @@
 <script lang="ts">
   import site from '@data/site'
   import header from '@data/header.yml'
-  import Cart from './Cart.svelte'
   import { Logo, Navbar, Link, Icon, Button, Drawer, Social } from 'fulldev-ui'
 </script>
 
@@ -45,5 +44,4 @@
       {...link}
     />
   {/each}
-  <Cart />
 </Navbar>
