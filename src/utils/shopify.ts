@@ -10,6 +10,14 @@ import {
   CartCreateMutation,
   CartLinesAddMutation,
 } from './graphql'
+import CartStore from '../stores/CartStore.js'
+
+// Cache cart ID to localStorage upon changes to CartStore
+CartStore.subscribe(cart => {
+  if (cart?.id) {
+    localStorage.setItem('cartId', cart.id)
+  }
+})
 
 export async function fetchStorefront(query: string, variables = {}) {
   const endpoint = `${config.shopDomain}/api/${config.apiVersion}/graphql.json`
@@ -79,17 +87,9 @@ async function createCart(merchandiseId: string, quantity: number) {
 }
 
 // Add to cart or create cart if none exists and return cart object
-
-// @Robert Deze functie wordt aangeroepen in de AddToCartForm component. Het is de bedoeling dat deze function ALTIJD een cart creeert of een item toevoegt.
-// In deze functie wordt nu gebruik gemaakt van localstorage.
-// Het is de bedoeling dat wanneer de cart wordt aangemaakt/aangepast, dit automatisch wordt toegevoegd/geupdate in de svelte store
-// Volgends mij kan door middel van een store.set() functie
-// Ik heb al een store aangemaakt in src/stores/cart.ts
-// het object wat je kunt toevoegen is OF addedCart OF createdCart, beide zijn het cart-object
-// Deze kan vervolgens dus weer gelzen worden vanuit CartLines.svelte
 export async function addToCart(merchandiseId: string, quantity: number) {
   const cartId = localStorage.getItem('cartId')
-  console.log('cartId in localstorage:', cartId)
+  console.log('cartId in CartStore/localStorage:', cartId)
   if (cartId) {
     const addedCart = await fetchStorefront(CartLinesAddMutation, {
       cartId,
@@ -98,10 +98,10 @@ export async function addToCart(merchandiseId: string, quantity: number) {
     })
     console.log('Cart with added line:', addedCart)
     return addedCart.cartLinesAdd.cart
-  } else {
+  }
+  else {
     const createdCart = await createCart(merchandiseId, quantity)
     console.log('Created cart:', createdCart)
-    localStorage.setItem('cartId', createdCart.id)
     return createdCart
   }
 }

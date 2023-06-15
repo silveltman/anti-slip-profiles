@@ -2,8 +2,6 @@
 
 import { writable } from 'svelte/store'
 
-const CartStore = writable({
-  id: null,
-})
+const CartStore = writable({})
 
 export default CartStore

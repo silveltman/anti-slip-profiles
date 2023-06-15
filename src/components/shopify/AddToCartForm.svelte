@@ -1,5 +1,6 @@
 <script lang="ts">
   // @Robert dit component werkt volledig. Het voegt een product-variant toe aan de cart
+  import CartStore from '../../stores/CartStore.js'
   import { addToCart } from '@utils/shopify'
   import { Button, Select, Input, Text } from 'fulldev-ui'
 
@@ -25,7 +26,7 @@
   $: setSelectedVariant(selectedOptions)
 
   async function onSubmit() {
-    await addToCart(selectedVariant.id, parseInt(quantity))
+    CartStore.set(await addToCart(selectedVariant.id, parseInt(quantity)))
   }
 </script>
 

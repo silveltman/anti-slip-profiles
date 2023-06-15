@@ -5,14 +5,10 @@
   // Als de svelte store veranders, moet dit component hierop reageren.
   // Ik krijg nu nog een error (vandaar dat ik het heb gecomment), ik denk dat dit verholpen kan worden door de code in een onMounted te wrappen, zodat het alleen runt op de client
 
+  import { get } from 'svelte/store'
   import CartStore from '../../stores/CartStore.js'
 
-  // CartStore.subscribe((data) => {
-  //   cart = data
-  // })
-
-  // let cart = {}
-  // console.log(cart)
+  console.log(get(CartStore))
 </script>
 
-<h1>HELLO WORLD</h1>
+<h1></h1>
