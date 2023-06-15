@@ -6,7 +6,7 @@ seo:
 
 blocks:
   hero:
-    _component: ProductHero
+    _component: HeroSecondary
     heading: Al onze producten
     textarea: |
       Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae. Auctor netus sociis sit nulla. Convallis morbi integer tellus.

@@ -1,12 +1,17 @@
 <script>
-  import { Container, Flow, Section, Heading, Prose } from 'fulldev-ui'
+  import { Container, Stack, Section, Heading, Prose } from 'fulldev-ui'
 
   export let product
+
+  console.log(product)
 </script>
 
-<Section class="light-orange border-y border-base-6 bg-base-1">
+<Section
+  class="light-orange bg-base-1"
+  id="product-beschrijving"
+>
   <Container>
-    <Flow row>
+    <Stack row>
       <Prose class="light large">
         <Heading
           class="!small"
@@ -14,6 +19,6 @@
         />
         {@html product.descriptionHtml}
       </Prose>
-    </Flow>
+    </Stack>
   </Container>
 </Section>

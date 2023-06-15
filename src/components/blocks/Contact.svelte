@@ -3,7 +3,7 @@
     Button,
     Card,
     Container,
-    Flow,
+    Stack,
     Form,
     Heading,
     Highlight,
@@ -14,6 +14,7 @@
     Textarea,
     Social,
     Icon,
+    Toggle,
   } from 'fulldev-ui'
 
   export let content: any
@@ -21,11 +22,11 @@
 
 <Section>
   <Container>
-    <Flow
+    <Stack
       row
       class="items-start"
     >
-      <Flow>
+      <Stack>
         <Highlight>
           <Heading
             as="h1"
@@ -35,26 +36,29 @@
             text="Heeft u een vraag, opmerking of een bericht voor Anti-Slip Profiles? Gebruikt u dan het onderstaande formulier. Anti-Slip Profiles neemt dan zo snel mogelijk contact met u op om uw vraag te beantwoorden."
           />
         </Highlight>
-        <img
-          src={content.europe._map}
-          alt="Kaart"
-          class="map max-lg:hidden"
-        />
-      </Flow>
-      <Flow>
-        <input
-          type="checkbox"
-          class="peer"
+      </Stack>
+      <Stack class="relative">
+        <Toggle
+          class="light-orange"
+          id="area"
+          left="Europa"
+          right="Scandinavie"
         />
         {#each [content.europe, content.scandinavia] as supplier, i}
+          <img
+            src={supplier._map}
+            alt="Kaart"
+            class="absolute right-full top-[200px] w-full -translate-x-xl
+            {i === 0 ? 'flex peer-checked:hidden' : 'hidden peer-checked:flex'}
+            "
+          />
           <Panel
             class="!bg-base-1
           {i === 0 ? 'flex peer-checked:hidden' : 'hidden peer-checked:flex'}
           "
           >
-            <Flow>
+            <Stack>
               {#each [supplier.address, supplier.phone, supplier.email] as item}
-                <!-- content here -->
                 <div class="flex items-center gap-md">
                   <Button
                     href={item.href}
@@ -87,12 +91,8 @@
                   name="linkedin"
                   href="#"
                 />
-                <Social
-                  name="email"
-                  href="#"
-                />
               </div>
-            </Flow>
+            </Stack>
           </Panel>
           <Panel
             class="!bg-base-1
@@ -160,7 +160,7 @@
             </Form>
           </Panel>
         {/each}
-      </Flow>
-    </Flow>
+      </Stack>
+    </Stack>
   </Container>
 </Section>

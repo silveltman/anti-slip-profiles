@@ -4,7 +4,7 @@
     Image,
     Container,
     Section,
-    Flow,
+    Stack,
     Highlight,
     Text,
     Heading,
@@ -15,9 +15,9 @@
 
 <Section class="product-split [&+.product-split_.order]:lg:order-2">
   <Container>
-    <Flow
+    <Stack
+      class="items-center"
       row
-      center
     >
       <div class="order flex w-full gap-md lg:col-span-3">
         <Image
@@ -54,6 +54,6 @@
           slot="actions"
         />
       </Highlight>
-    </Flow>
+    </Stack>
   </Container>
 </Section>

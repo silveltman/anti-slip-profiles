@@ -26,10 +26,10 @@ seo:
 blocks:
   contact:
     _component: Contact
-    heading: Contact Anti-Slip Profiles
+    heading: Contact Anti-Slip Profies
     textarea: Heeft u een vraag, opmerking of een bericht voor Anti-slip Profiles? Gebruikt u dan het onderstaande formulier. Anti-slip Profiles neemt dan zo snel als mogelijk contact met u op om uw vraag te beantwoorden.
     europe:
-      _map: /map.png
+      _map: /map-europe.svg
       _form_key: test
       address:
         icon: location_on
@@ -54,7 +54,7 @@ blocks:
         - name: facebook
           url: https://www.facebook.com/
     scandinavia:
-      _map: /map.png
+      _map: /map-scandinavia.svg
       _form_key: test
       address:
         icon: location_on

@@ -12,7 +12,7 @@
     Logo,
     Text,
     Heading,
-    Flow,
+    Stack,
   } from 'fulldev-ui'
 </script>
 
@@ -40,7 +40,7 @@
 
 <Section class="dark border-t border-base-6 bg-base-1 pb-xl">
   <Container>
-    <Flow
+    <Stack
       row
       center
     >
@@ -70,6 +70,6 @@
           text={footer.textarea}
         />
       </Highlight>
-    </Flow>
+    </Stack>
   </Container>
 </Section>

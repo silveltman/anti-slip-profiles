@@ -3,7 +3,7 @@
     Section,
     Container,
     Button,
-    Flow,
+    Stack,
     Text,
     Heading,
     Highlight,
@@ -16,7 +16,7 @@
 
 <Section class="pt-0">
   <Container>
-    <Flow>
+    <Stack>
       <div
         class="dark overflow-hidden bg-base-1 max-md:-mx-4 max-md:rounded-[0px] md:rounded-box md:shadow-lg"
       >
@@ -49,6 +49,6 @@
           variant="solid"
         />
       </Highlight>
-    </Flow>
+    </Stack>
   </Container>
 </Section>

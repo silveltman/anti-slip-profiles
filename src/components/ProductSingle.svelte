@@ -1,87 +1,54 @@
 <script>
   import {
-    Gallery,
+    Link,
     Container,
-    Flow,
+    Stack,
     Highlight,
     Section,
-    Button,
     Text,
     Heading,
     Image,
-    Input,
-    Select,
+    Button,
+    GalleryScroll,
   } from 'fulldev-ui'
+  import AddToCartForm from './shopify/AddToCartForm.svelte'
 
   export let product
-
-  const images = product.images.map((img) => ({
-    src: img.src,
-    alt: img.altText,
-  }))
-
-  const price = `€${product.variants[0].priceV2.amount}`
-
-  const sizes = product.variants.map((variant) => variant.title)
-
-  function handleClick() {
-    add
-    console.log('click')
-  }
 </script>
 
 <Section class="max-lg:pt-0">
   <Container>
-    <Flow row>
-      <Gallery class="lg:col-span-2">
-        {#each images as image}
-          <Image {...image} />
+    <Stack row>
+      <GalleryScroll
+        ratio={4 / 3}
+        class="lg:col-span-2"
+      >
+        {#each product.images.nodes as image}
+          <Image
+            src={image.url}
+            alt={image.altText}
+          />
         {/each}
-      </Gallery>
+      </GalleryScroll>
       <Highlight class="sticky top-lg">
         <Heading text={product.title} />
-        <Text
-          text={price}
-          class="light-orange !text-base-11 large"
-        />
-        <Text>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-          necessitatibus aperiam facilis repudiandae veniam!
+        <Text class="!text-base-11">
+          {product.description}
+          <Link
+            class="light-orange pl-sm"
+            href="#product-beschrijving">Meer info</Link
+          >
         </Text>
         <svelte:fragment slot="actions">
-          <div class="flex w-full justify-stretch gap-sm">
-            <Select
-              class="flex-1 shrink-0"
-              id="groefdikte"
-              placeholder="Kies groefdikte"
-              options={sizes}
-            />
-            <Button
-              class="light-orange flex-1"
-              variant="soft"
-              text="Inmeet instructies"
-              href="/inmeetinstructies.pdf"
-              target="_blank"
-            />
-          </div>
-          <div class="flex w-full gap-sm">
-            <Input
-              class="min-w-0 shrink"
-              type="number"
-              value="1"
-              size="10"
-              maxlength="4"
-              id="aantal"
-            />
-            <Button
-              variant="solid"
-              on:click={handleClick}
-              class="light-orange w-full"
-              text="Voeg toe aan winkelwagen"
-            />
-          </div>
+          <AddToCartForm {product} />
+          <Button
+            target="_blank"
+            variant="soft"
+            class="light-orange w-full"
+            href="/inmeetinstructies.pdf">Bekijk inmeetinstructies</Button
+          >
         </svelte:fragment>
       </Highlight>
-    </Flow>
+    </Stack>
   </Container>
 </Section>

@@ -11,6 +11,7 @@
     Whatsapp,
     Heading,
   } from 'fulldev-ui'
+  // import CartLines from './shopify/CartLines.svelte'
 </script>
 
 <Drawer position="right">
@@ -27,5 +28,6 @@
     slot="header"
   />
 
+  <!-- <CartLines /> -->
   <p>Producten komen straks hier...</p>
 </Drawer>

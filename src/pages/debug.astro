@@ -10,6 +10,6 @@ const products = await getProducts()
 <Layout seo={null}>
   <AddToCartForm
     client:load
-    productId={products[0].id}
+    product={products[0]}
   />
 </Layout>

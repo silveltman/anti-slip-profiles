@@ -3,6 +3,8 @@ fragment productFragment on Product {
   id
   title
   handle
+  description(truncateAt: 160)
+  descriptionHtml
   images (first: 30) {
     nodes {
       url
@@ -22,9 +24,13 @@ fragment productFragment on Product {
       title
       availableForSale
       quantityAvailable
-      price {
+      priceV2 {
         amount
         currencyCode
+      }
+      selectedOptions {
+          name
+          value
       }
     }
   }
@@ -33,6 +39,12 @@ fragment productFragment on Product {
     width
     height
     altText
+  }
+  priceRange {
+    minVariantPrice {
+      amount
+      currencyCode
+    }
   }
 }
 `

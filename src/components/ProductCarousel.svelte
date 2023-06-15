@@ -7,7 +7,7 @@
     Heading,
     Image,
     Carousel,
-    Flow,
+    Stack,
   } from 'fulldev-ui'
 
   export let products: any
@@ -15,30 +15,31 @@
 
 <Section>
   <Container>
-    <Flow>
+    <Stack>
       <Heading
         as="h3"
         class="small">Vergelijkbare producten</Heading
       >
-      <Carousel>
+      <Carousel class="large">
         {#each products as product}
-          <Card href={product.href}>
+          <Card href="/producten/{product.handle}">
             <Image
               slot="media"
-              {...product.image}
+              src={product.featuredImage.url}
+              alt={product.featuredImage.altText}
             />
             <Text
               class="light-orange"
               secondary
-              text={product.price}
+              text={product.priceRange.minVariantPrice.amount}
             />
             <Heading
               as="h4"
-              text={product.heading}
+              text={product.title}
             />
           </Card>
         {/each}
       </Carousel>
-    </Flow>
+    </Stack>
   </Container>
 </Section>
