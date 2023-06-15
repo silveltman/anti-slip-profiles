@@ -30,11 +30,8 @@
     "astro-seo": "^0.7.2",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
-    "flowbite-lte": "^0.37.4",
-    "fulldev-ui": "^0.5.13",
+    "fulldev-ui": "^0.5.14",
     "google-fonts-helper": "^3.3.0",
-    "rippleui": "^1.12.1",
-    "shopify-buy": "^2.19.0",
     "svelte": "^3.59.1",
     "tailwindcss": "^3.3.2",
     "tailwindcss-themer": "^3.1.0"
