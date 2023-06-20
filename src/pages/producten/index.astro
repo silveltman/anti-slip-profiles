@@ -5,11 +5,10 @@ import { getProducts } from '@utils/shopify'
 import Blocks from '@components/helpers/Blocks.astro'
 import ProductGrid from '@components/ProductGrid.svelte'
 
-import { fetchData, productsQuery } from '@utils/shopifyV2'
-
 const page = await getEntryBySlug('pages', 'producten')
 
-const { products } = await fetchData(productsQuery)
+const products = await getProducts()
+console.log(products)
 ---
 
 <Layout seo={null}>

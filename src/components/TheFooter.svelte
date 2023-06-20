@@ -61,7 +61,7 @@
       {/each}
       <Highlight>
         <Logo
-          src={site.logo}
+          src="/logo-white.svg"
           alt="Logo Anti-slip Profiles"
         />
         <Text

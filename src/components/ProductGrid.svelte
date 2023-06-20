@@ -11,28 +11,12 @@
   } from 'fulldev-ui'
 
   export let products
-  let nodes: {
-    id: string
-    title: string
-    handle: string
-    description: string
-    featuredImage: {
-      url: string
-      altText: string
-    }
-    priceRange: {
-      minVariantPrice: {
-        amount: string
-        currencyCode: string
-      }
-    }
-  }[] = products.nodes
 </script>
 
 <Section class="pt-xl">
   <Container>
     <Grid class="items-start large">
-      {#each nodes as product}
+      {#each products as product}
         <Card
           href="/producten/{product.handle}"
           box
@@ -50,8 +34,9 @@
           <Text
             class="light-orange"
             secondary
-            text={product.priceRange.minVariantPrice.amount}
-          />
+          >
+            v.a €{product.priceRange.minVariantPrice.amount.replace('.', ',')}
+          </Text>
           <Heading
             as="h4"
             text={product.title}
