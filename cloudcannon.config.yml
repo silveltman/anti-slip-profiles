@@ -17,13 +17,16 @@ collection_groups:
     collections:
       - collections
       - products
+  - heading: Vertalingen
+    collections:
+      - data
 # -----------------------------------------------
 # Collection configuration
 # -----------------------------------------------
 
 collections_config:
   data:
-    path: src/data
+    path: src/data/translations
     disable_add: true
     disable_add_folder: true
   pages:

@@ -1,14 +1,120 @@
 {
-    "Benieuwd hoeveel je nodig hebt?": {
-      "original": "\n\t\tBenieuwd hoeveel je nodig hebt?\n\t",
-      "value": "Bonjour!"
-    },
-    "Geloof ons niet, probeer het zelf!": {
-      "original": "\n\t\tGeloof ons niet, probeer het zelf!\n\t",
-      "value": "try it yourself!"
-    },
-    "title-test": {
-      "original": "\n\t\tNooit meer een gladde vlonder\n\t",
-      "value": "Never a slippery thingy again"
-    }
+  "Afdicht profiel®": {
+    "original": "\n\t\tAfdicht profiel®\n\t",
+    "value": "Profil d'étanchéité®"
+  },
+  "Algemene voorwaarden": {
+    "original": "\n\t\tAlgemene voorwaarden\n\t",
+    "value": "Conditions générales"
+  },
+  "Anti-slip profiel®": {
+    "original": "\n\t\tAnti-slip profiel®\n\t",
+    "value": "Profil antidérapant®"
+  },
+  "Anti-slip strook": {
+    "original": "\n\t\tAnti-slip strook\n\t",
+    "value": "Bande antidérapante"
+  },
+  "Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae.": {
+    "original": "\n\t\tAuctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae.\n\t",
+    "value": "Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum à pharetra vitae."
+  },
+  "Bedrijf": {
+    "original": "\n\t\tBedrijf\n\t",
+    "value": "Entreprise"
+  },
+  "Bekijk inmeetinstructies": {
+    "original": "\n\t\tBekijk inmeetinstructies\n\t",
+    "value": "Voir les instructions de mesure"
+  },
+  "Bekijk producten": {
+    "original": "\n\t\tBekijk producten\n\t",
+    "value": "Voir les produits"
+  },
+  "Benieuwd hoeveel je nodig hebt?": {
+    "original": "\n\t\tBenieuwd hoeveel je nodig hebt?\n\t",
+    "value": "Curieux de savoir combien vous avez besoin?"
+  },
+  "Contact": {
+    "original": "\n\t\tContact\n\t",
+    "value": "Contact"
+  },
+  "Direct van de producent.": {
+    "original": "\n\t\tDirect van de producent.\n\t",
+    "value": "Directement du fabricant."
+  },
+  "Ga naar product": {
+    "original": "\n\t\tGa naar product\n\t",
+    "value": "Aller au produit"
+  },
+  "Geloof ons niet, probeer het zelf!": {
+    "original": "\n\t\tGeloof ons niet, probeer het zelf!\n\t",
+    "value": "Ne nous croyez pas, essayez-le vous-même!"
+  },
+  "Gepatenteerd": {
+    "original": "\n\t\tGepatenteerd\n\t",
+    "value": "Breveté"
+  },
+  "Gepatenteerde Anti-Slip producten": {
+    "original": "\n\t\tGepatenteerde Anti-Slip producten\n\t",
+    "value": "Produits antidérapants brevetés"
+  },
+  "Het gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a. galerijen waar men hinder ondervindt van zand en (regen)water wat door de groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven gemonteerd!\n": {
+    "original": "\n\t\tHet gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a. galerijen waar men hinder ondervindt van zand en (regen)water wat door de groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven gemonteerd!\n\n\t",
+    "value": "Le profil d'étanchéité de terrasse breveté a été développé pour les galeries, entre autres, où les gens sont dérangés par le sable et l'eau (de pluie) qui tombe à travers les rainures. Ce produit est également installé sans mastic, colle ou vis!"
+  },
+  "Het gepatenteerde vlonder antislip-profiel is voorzien van een antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm of schroeven!Voor zowel hout als composiet vlonderdelen en in alle seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.\n": {
+    "original": "\n\t\tHet gepatenteerde vlonder antislip-profi-profiel is voorzien van een antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm of schroeven! Voor zowel hout als composiet vlonderdelen en in alle seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.\n\n\t",
+    "value": "Le profil antidérapant breveté pour terrasses est équipé d'une bande antidérapante, facile à installer sans utiliser de mastic, de colle ou de vis ! Convient pour les parties de terrasse en bois et en composite et peut être installé en toutes saisons ! Par exemple : galeries, terrasses, ponts et jetées."
+  },
+  "Home": { "original": "\n\t\tHome\n\t", "value": "Accueil" },
+  "Neem contact op": {
+    "original": "\n\t\tNeem contact op\n\t",
+    "value": "Contactez-nous"
+  },
+  "Nooit meer een gladde vlonder": {
+    "original": "\n\t\tNooit meer een gladde vlonder\n\t",
+    "value": "Plus jamais de terrasse glissante"
+  },
+  "Premium kwaliteit.": {
+    "original": "\n\t\tPremium kwaliteit.\n\t",
+    "value": "Qualité premium."
+  },
+  "Privacyverklaring": {
+    "original": "\n\t\tPrivacyverklaring\n\t",
+    "value": "Déclaration de confidentialité"
+  },
+  "Producten": { "original": "\n\t\tProducten\n\t", "value": "Produits" },
+  "Snel en gemakkelijk.": {
+    "original": "\n\t\tSnel en gemakkelijk.\n\t",
+    "value": "Rapide et facile."
+  },
+  "Vlonder Afdicht Profiel ®": {
+    "original": "\n\t\tVlonder Afdicht Profiel ®\n\t",
+    "value": "Profil d'étanchéité pour terrasse ®"
+  },
+  "Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten vlonder i.v.m. de schroefgaten.\n": {
+    "original": "\n\t\tVlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten vlonder i.v.m. de schroefgaten.\n\n\t",
+    "value": "Les bandes antidérapantes pour terrasse peuvent être facilement installées sur votre terrasse en bois à l'aide de vis de couleur. Nous fournissons les bandes de terrasse en noir et jaune. Malheureusement, cette méthode provoque des dommages à votre terrasse en bois en raison des trous de vis."
+  },
+  "Vlonder Anti-slip Profiel ®": {
+    "original": "\n\t\tVlonder Anti-slip Profiel ®\n\t",
+    "value": "Profil antidérapant pour terrasse ®"
+  },
+  "Vlonder Anti-slip Strook": {
+    "original": "\n\t\tVlonder Anti-slip Strook\n\t",
+    "value": "Bande antidérapante pour terrasse"
+  },
+  "Vraag proefpakket aan": {
+    "original": "\n\t\tVraag proefpakket aan\n\t",
+    "value": "Demander un échantillon"
+  },
+  "Vragen of een groot project?": {
+    "original": "\n\t\tVragen of een groot project?\n\t",
+    "value": "Des questions ou un grand projet ?"
+  },
+  "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.": {
+    "original": "\n\t\tlorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\t",
+    "value": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
+}
