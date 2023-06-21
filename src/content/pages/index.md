@@ -82,7 +82,7 @@ blocks:
       Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten vlonder i.v.m. de schroefgaten.
     button:
       text: Ga naar product
-      href: '/producten'
+      href: '/producten/afdicht-profiel'
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt

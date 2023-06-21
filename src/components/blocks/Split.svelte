@@ -36,21 +36,25 @@
           <Text
             class="light-orange"
             text={content.eyebrow}
+            data-rosey={content.eyebrow}
             secondary
           />
         {/if}
         <Heading
           as="h2"
           text={content.heading}
+          data-rosey={content.heading}
         />
         <Text
           text={content.textarea}
+          data-rosey={content.textarea}
           class="!text-base-11"
         />
         <Button
           variant="solid"
           class="light-orange"
           {...content.button}
+          data-rosey={content.button.text}
           slot="actions"
         />
       </Highlight>

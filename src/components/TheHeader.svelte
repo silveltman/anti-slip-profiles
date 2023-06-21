@@ -12,7 +12,10 @@
   >
     <div class="flex h-full flex-col gap-md">
       {#each header.links as link}
-        <Link {...link} />
+        <Link
+          {...link}
+          data-rosey={link.text}
+        />
       {/each}
     </div>
     <div class="mt-lg flex gap-sm">
@@ -42,6 +45,7 @@
   {#each header.links as link}
     <Link
       class="max-lg:hidden"
+      data-rosey={link.text}
       {...link}
     />
   {/each}

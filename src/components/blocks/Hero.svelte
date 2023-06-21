@@ -36,11 +36,12 @@
       >
         <Text
           text={content.eyebrow}
+          data-rosey={content.eyebrow}
           class="light-orange !text-base-11"
         />
         <Heading
           as="h1"
-          data-rosey="title-test"
+          data-rosey={content.heading}
           text={content.heading}
         />
         <Button
@@ -48,6 +49,7 @@
           slot="actions"
           {...content.button}
           variant="solid"
+          data-rosey={content.button.text}
         />
       </Highlight>
     </Stack>

@@ -26,6 +26,7 @@
         <Button
           slot="actions"
           {...content.button}
+          data-rosey={content.button.text}
           variant="ringed"
         />
       </Highlight>

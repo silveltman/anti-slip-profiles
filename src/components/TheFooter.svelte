@@ -26,11 +26,13 @@
         <Heading
           class="text-white"
           text={footer.cta.heading}
+          data-rosey={footer.cta.heading}
         />
         <Button
           class="!text-white hover:ring-base-4"
           slot="actions"
           {...footer.cta.button}
+          data-rosey={footer.cta.button.text}
           variant="ringed"
         />
       </Highlight>
@@ -48,12 +50,14 @@
         <div class="flex flex-col items-start gap-xs">
           <Heading
             text={list.heading}
+            data-rosey={list.heading}
             as="h4"
             class="pb-sm"
           />
           {#each list.links as item}
             <Link
               class="small"
+              data-rosey={item.text}
               {...item}
             />
           {/each}
@@ -68,6 +72,7 @@
           class="!text-base-11"
           secondary
           text={footer.textarea}
+          data-rosey={footer.textarea}
         />
       </Highlight>
     </Stack>
