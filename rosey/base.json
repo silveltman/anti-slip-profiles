@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "keys": {
+    "Benieuwd hoeveel je nodig hebt?": {
+      "original": "\n\t\tBenieuwd hoeveel je nodig hebt?\n\t",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "index/index.html": 1
+      },
+      "total": 2
+    },
+    "Geloof ons niet, probeer het zelf!": {
+      "original": "\n\t\tGeloof ons niet, probeer het zelf!\n\t",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "index/index.html": 1
+      },
+      "total": 2
+    },
+    "title-test": {
+      "original": "\n\t\tNooit meer een gladde vlonder\n\t",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "index/index.html": 1
+      },
+      "total": 2
+    }
+  }
+}

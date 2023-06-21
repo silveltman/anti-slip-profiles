@@ -54,7 +54,7 @@
         <span class="text-base-11">Totaal:</span>
         €{$cartStore.cost.totalAmount.amount.replace('.', ',')}
       </div>
-      <p class="text-center text-base-11">Verzendkosten bij afrekenen</p>
+      <!-- <p class="text-center text-base-11">Verzendkosten bij afrekenen</p> -->
       <Button
         class="light-orange"
         variant="solid"

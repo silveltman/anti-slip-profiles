@@ -40,6 +40,7 @@
         />
         <Heading
           as="h1"
+          data-rosey="title-test"
           text={content.heading}
         />
         <Button

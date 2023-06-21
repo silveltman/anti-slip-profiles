@@ -10,8 +10,9 @@
     "preview": "astro preview",
     "browsersync": "browser-sync start --server 'dist' --files 'dist'",
     "astro": "astro",
-    "cache-remote-images": "node cacheRemoteImages.js",
-    "down": "node cacheRemoteImages.js"
+    "rosey:gen": "yarn build && npx rosey generate --source dist",
+    "rosey:serve": "npx rosey build --source dist --default-language nl --serve",
+    "rosey:build": "npx rosey build --source dist --default-language nl"
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.2.3",

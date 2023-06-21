@@ -20,6 +20,7 @@
       >
         <Heading
           class="!text-base-11"
+          data-rosey={content.heading}
           text={content.heading}
         />
         <Button
