@@ -18,12 +18,11 @@
       ],
       "@utils/*": [
         "src/utils/*"
+      ],
+      "@stores/*": [
+        "src/stores/*"
       ]
     },
-    // "types": [
-    //   "@modyfi/vite-plugin-yaml/modules"
-    //   ],
   },
   "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"],
-
 }

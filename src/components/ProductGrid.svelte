@@ -10,6 +10,8 @@
     Ratio,
   } from 'fulldev-ui'
 
+  import Money from '@components/shopify/Money.svelte'
+
   export let products
 </script>
 
@@ -27,6 +29,7 @@
             slot="media"
           >
             <Image
+              class="border-b border-base-6"
               src={product.featuredImage.url}
               alt={product.featuredImage.altText}
             />
@@ -35,7 +38,7 @@
             class="light-orange"
             secondary
           >
-            v.a €{product.priceRange.minVariantPrice.amount.replace('.', ',')}
+            <Money money={product.priceRange.minVariantPrice} />
           </Text>
           <Heading
             as="h4"
@@ -43,7 +46,7 @@
           />
           <Text
             text={product.description}
-            class="!text-base-11"
+            class="text-sm !text-base-11"
           />
         </Card>
       {/each}

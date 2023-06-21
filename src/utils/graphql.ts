@@ -99,6 +99,7 @@ const CART_FRAGMENT = `#graphql
   }
 `
 
+// Query products array
 export const ProductsQuery = `#graphql
   query ($first: Int!) {
       products(first: $first) {
@@ -110,6 +111,7 @@ export const ProductsQuery = `#graphql
   ${PRODUCT_FRAGMENT}
 `
 
+// Query single product
 export const ProductQuery = `#graphql
   query ($id: ID!) {
     product(id: $id) {
@@ -119,18 +121,17 @@ export const ProductQuery = `#graphql
   ${PRODUCT_FRAGMENT}
 `
 
-export const VariantBySelectedOptionsQuery = `#graphql
-  query ($id: ID!, $selectedOptions: [SelectedOptionInput!]!) {
-    product(id: $id) {
-      variantBySelectedOptions(selectedOptions: $selectedOptions) {
-        id
-        title
-        availableForSale
-      }
+// Query cart
+export const CartQuery = `#graphql
+  query ($id: ID!) {
+    cart(id: $id) {
+      ...cartFragment
     }
   }
+  ${CART_FRAGMENT}
 `
 
+// Mutation to create cart
 export const CartCreateMutation = `#graphql
   mutation ($merchandiseId: ID!, $quantity: Int = 1) {
     cartCreate(input: {lines: {merchandiseId: $merchandiseId, quantity: $quantity}}) {
@@ -142,12 +143,25 @@ export const CartCreateMutation = `#graphql
   ${CART_FRAGMENT}
 `
 
+// Mutation to add to cart
 export const CartLinesAddMutation = `#graphql
   mutation MyMutation($cartId: ID!, $merchandiseId: ID!, $quantity: Int = 1) {
     cartLinesAdd(
       cartId: $cartId
       lines: {merchandiseId: $merchandiseId, quantity: $quantity}
     ) {
+      cart {
+        ...cartFragment
+      }
+    }
+  }
+  ${CART_FRAGMENT}
+`
+
+// Mutation to remove line item from cart
+export const CartLinesRemoveMutation = `#graphql
+  mutation MyMutation($cartId: ID!, $lineIds: [ID!]!) {
+    cartLinesRemove(lineIds: $lineIds, cartId: $cartId) {
       cart {
         ...cartFragment
       }

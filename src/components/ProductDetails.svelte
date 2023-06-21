@@ -2,8 +2,6 @@
   import { Container, Stack, Section, Heading, Prose } from 'fulldev-ui'
 
   export let product
-
-  console.log(product)
 </script>
 
 <Section

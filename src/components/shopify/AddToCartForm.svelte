@@ -1,5 +1,4 @@
 <script lang="ts">
-  // @Robert dit component werkt volledig. Het voegt een product-variant toe aan de cart
   import { addToCart } from '@utils/shopify'
   import { Button, Select, Input, Text } from 'fulldev-ui'
 
@@ -25,6 +24,7 @@
   $: setSelectedVariant(selectedOptions)
 
   async function onSubmit() {
+    console.log('selectedVariant', selectedVariant)
     await addToCart(selectedVariant.id, parseInt(quantity))
   }
 </script>
@@ -43,8 +43,11 @@
         />
         <Select
           bind:value={selectedOptions[option.name]}
+          disabled={option.values.length < 2}
           id={option.name}
-          class="grow"
+          class="bg-image-none grow !opacity-100
+          {option.values.length < 2 && 'bg-none'}
+          "
           options={option.values}
         />
       </div>

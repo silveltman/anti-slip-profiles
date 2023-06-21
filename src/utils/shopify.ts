@@ -1,15 +1,13 @@
-// @Robert in deze file staan de functies die de data van Shopify ophalen en plaatsen
-// Het zijn graphql fetch request, waarvan de queries te vinden zijn in graphql.ts
-// Ook in deze fil e kun je werken, check comment hieronder
-
 import config from './config'
 import {
   ProductsQuery,
   ProductQuery,
-  VariantBySelectedOptionsQuery,
+  CartQuery,
   CartCreateMutation,
   CartLinesAddMutation,
+  CartLinesRemoveMutation,
 } from './graphql'
+import cartStore from '@stores/CartStore.js'
 
 export async function fetchStorefront(query: string, variables = {}) {
   const endpoint = `${config.shopDomain}/api/${config.apiVersion}/graphql.json`
@@ -31,11 +29,6 @@ export async function fetchStorefront(query: string, variables = {}) {
       return null
     }
     return body.data
-
-    // return {
-    //   status: result.status,
-    //   body: await result.json(),
-    // }
   } catch (error) {
     console.error('Error:', error)
     return {
@@ -57,16 +50,10 @@ export async function getProduct(id: string) {
   return response?.product
 }
 
-// Return product variant by selected options
-export async function getVariantBySelectedOptions(
-  id: string,
-  selectedOptions: { name: string; value: string }[]
-) {
-  const response = await fetchStorefront(VariantBySelectedOptionsQuery, {
-    id,
-    selectedOptions,
-  })
-  return response.product.variantBySelectedOptions
+// Return cart by id
+export async function getCart(id: string) {
+  const response = await fetchStorefront(CartQuery, { id })
+  return response?.cart
 }
 
 // Create cart and return cart object
@@ -75,33 +62,35 @@ async function createCart(merchandiseId: string, quantity: number) {
     merchandiseId,
     quantity,
   })
-  return response.cartCreate.cart
+  return response
 }
 
-// Add to cart or create cart if none exists and return cart object
-
-// @Robert Deze functie wordt aangeroepen in de AddToCartForm component. Het is de bedoeling dat deze function ALTIJD een cart creeert of een item toevoegt.
-// In deze functie wordt nu gebruik gemaakt van localstorage.
-// Het is de bedoeling dat wanneer de cart wordt aangemaakt/aangepast, dit automatisch wordt toegevoegd/geupdate in de svelte store
-// Volgends mij kan door middel van een store.set() functie
-// Ik heb al een store aangemaakt in src/stores/cart.ts
-// het object wat je kunt toevoegen is OF addedCart OF createdCart, beide zijn het cart-object
-// Deze kan vervolgens dus weer gelzen worden vanuit CartLines.svelte
 export async function addToCart(merchandiseId: string, quantity: number) {
-  const cartId = localStorage.getItem('cartId')
-  console.log('cartId in localstorage:', cartId)
-  if (cartId) {
+  const cartId = localStorage.cartId
+  const isValid = cartId ? cartId.startsWith('gid://shopify/Cart/') : false
+  if (isValid) {
     const addedCart = await fetchStorefront(CartLinesAddMutation, {
       cartId,
       merchandiseId,
       quantity,
     })
-    console.log('Cart with added line:', addedCart)
+    cartStore.set(addedCart.cartLinesAdd.cart)
     return addedCart.cartLinesAdd.cart
   } else {
     const createdCart = await createCart(merchandiseId, quantity)
-    console.log('Created cart:', createdCart)
-    localStorage.setItem('cartId', createdCart.id)
-    return createdCart
+    cartStore.set(createdCart.cartCreate.cart)
+    return createdCart.cartCreate.cart
   }
+}
+
+export async function removeCartLine(lineId: string) {
+  const cartId = localStorage.cartId
+  console.log(cartId)
+  const removedLineCart = await fetchStorefront(CartLinesRemoveMutation, {
+    cartId,
+    lineIds: [lineId],
+  })
+  console.log('cart with removed line:', removedLineCart.cartLinesRemove.cart)
+  cartStore.set(removedLineCart.cartLinesRemove.cart)
+  return removedLineCart.cartLinesRemove.cart
 }

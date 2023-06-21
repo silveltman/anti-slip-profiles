@@ -30,7 +30,7 @@
     "astro-seo": "^0.7.2",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
-    "fulldev-ui": "^0.5.14",
+    "fulldev-ui": "^0.5.16",
     "google-fonts-helper": "^3.3.0",
     "svelte": "^3.59.1",
     "tailwindcss": "^3.3.2",

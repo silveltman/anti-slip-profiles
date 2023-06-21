@@ -9,6 +9,7 @@
     Carousel,
     Stack,
   } from 'fulldev-ui'
+  import Money from './shopify/Money.svelte'
 
   export let products: any
 </script>
@@ -24,14 +25,14 @@
         {#each products as product}
           <Card href="/producten/{product.handle}">
             <Image
+              class="border border-base-6"
               slot="media"
               src={product.featuredImage.url}
               alt={product.featuredImage.altText}
             />
-            <Text
+            <Money
               class="light-orange"
-              secondary
-              text={product.priceRange.minVariantPrice.amount}
+              money={product.priceRange.minVariantPrice}
             />
             <Heading
               as="h4"

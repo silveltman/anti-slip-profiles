@@ -2072,10 +2072,10 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fulldev-ui@^0.5.14:
-  version "0.5.14"
-  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.14.tgz#64a60ba29e53626080311e264c34b7b475e3a99d"
-  integrity sha512-AbzTN77zgybzOHi0I3E3+oRRDhVIQ7D4lp94dNjLVOYN5wj3VaoxOqSNyZZ+a99jnq7KO4p6ZCc4vnmjWd+63w==
+fulldev-ui@^0.5.16:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.16.tgz#ea460cb15a0ad17365efda1c4c82b357cf9768e8"
+  integrity sha512-t8yO0928u0sTCgNcWKkPJSSJco0v5vWJX+fljOmcLgUYWGOeYH3andIrVstoX0Gipoy3WQHdPmAN9tdGi/ajJA==
   dependencies:
     "@radix-ui/colors" "^0.1.8"
     "@rodneylab/svelte-social-icons" "^0.0.26"
