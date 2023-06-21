@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:all": "yarn build && yarn rosey:build",
     "preview": "astro preview",
     "browsersync": "browser-sync start --server 'dist' --files 'dist'",
     "astro": "astro",
