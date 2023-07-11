@@ -37,7 +37,7 @@ blocks:
         scheelt extra plaatsingskosten t.o.v. andere producten. 
   proefpakket:
     _component: Cta
-    heading: Geloof ons niet, probeer het zelf!
+    heading: Product eerst uitproberen?
     button:
       text: Vraag proefpakket aan
       href: /producten
