@@ -79,7 +79,7 @@ blocks:
       alt: My alt
   inmeetinstructies:
     _component: Cta
-    heading: Benieuwd hoeveel je nodig hebt?
+    heading: Welk type profiel heeft u nodig voor uw vlonder?
     button:
       text: Bekijk inmeetinstructies
       href: /inmeetinstructies.pdf
