@@ -35,20 +35,20 @@ blocks:
       _map: /map-europe.svg
       _form_key: test
       address:
-        icon: Real Safety Denmark
-        heading: Auktionsgade 5
-        text: 6700 Esbjerg
+        icon: location_on
+        heading: Anti-Slip Profiles
+        text: Parkweg 2 8191JL Wapenveld Netherlands
         href:
       phone:
         icon: phone
         heading: Telefoon
-        text: Telefoonnummer Europa
-        href: '+4526114466'
+        text: '+31616715746'
+        href:
       email:
         icon: email
         heading: Email
-        text: Email Europa
-        href: Realsap@realsap.com
+        text: Info@antislipprofiles.com
+        href: mailto:contact@mydomain.com
       socials:
         - name: instagram
           url: https://www.instagram.com/
@@ -61,18 +61,18 @@ blocks:
       _form_key: test
       address:
         icon: location_on
-        heading: Adres
-        text: Adres scandinavie
+        heading: Real Safety
+        text: Auktionsgade 5 6700 Esbjerg Denmark
         href:
       phone:
         icon: phone
         heading: Telefoon
-        text: Telefoonnummer Scandinavie
+        text: '+4526114466'
         href: tel:123456789
       email:
         icon: email
         heading: Email
-        text: Email Scandinavie
+        text: Realsap@realsap.com
         href: mailto:contact@mydomain.com
       socials:
         - name: instagram
