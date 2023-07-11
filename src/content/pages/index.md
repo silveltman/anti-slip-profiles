@@ -1,88 +1,100 @@
 ---
 seo:
   title: Lorem ipsum
-  description: orem ipsum dolor, sit amet consectetur adipisicing elit. Error et magni minus.
-  image: '/placeholder.png'
-
+  description: >-
+    orem ipsum dolor, sit amet consectetur adipisicing elit. Error et magni
+    minus.
+  image: /placeholder.png
 blocks:
   hero:
     _component: Hero
-    eyebrow: Gepatenteerde Anti-Slip producten
-    heading: Nooit meer een gladde vlonder
+    eyebrow: Gepatenteerde Anti-Slip oplossingen
+    heading: Voorkom een glade vlonder!
     button:
       text: Bekijk producten
-      href: '/producten'
+      href: /producten
     video:
       src: https://unsplash.it/1200/400?random=1
       alt: My alt
-
   features:
     _component: Features
     card_1:
-      heading: Direct van de producent.
-      textarea: Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae.
+      heading: Gebruikersgemak
+      textarea: >-
+        Eenvoudig zelf te plaatsen, gebruik van bevestigingsmaterialen is
+        overbodig, uw hout of composiet beschadigd niet, in alle seizoenen te
+        plaatsen en direct beloopbaar!
     card_2:
-      heading: Snel en gemakkelijk.
-      textarea: Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae.
+      heading: Uniek
+      textarea: >-
+        Onze gepatenteerde anti-slip- en afdichtprofielen zijn uniek, uw vlonder
+        van hout of composiet maakt u anti-slip en spatwaterdicht met een
+        product! De uitstraling van uw vlonder blijft intact!
     card_3:
-      heading: Premium kwaliteit.
-      textarea: Auctor netus sociis sit nulla. Convallis morbi integer tellus, donec habitant fermentum at pharetra vitae.
-
+      heading: Prijs/kwaliteit
+      textarea: >-
+        Anti-slip- en afdichtprofielen zijn eenvoudig zelf te plaatsen, dat
+        scheelt extra plaatsingskosten t.o.v. andere producten. 
   proefpakket:
     _component: Cta
     heading: Geloof ons niet, probeer het zelf!
     button:
       text: Vraag proefpakket aan
-      href: '/producten'
-
+      href: /producten
   anti-slip_profiel:
     _component: Split
     eyebrow: Gepatenteerd
     heading: Anti-slip profiel®
-    textarea: |
-      Het gepatenteerde vlonder antislip-profiel is voorzien van een antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm of schroeven! Voor zowel hout als composiet vlonderdelen en in alle seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
+    textarea: >
+      Het gepatenteerde vlonder antislip-profiel is voorzien van een
+      antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit,
+      lijm of schroeven! Voor zowel hout als composiet vlonderdelen en in alle
+      seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
     button:
       text: Ga naar product
-      href: 'producten/anti-slip-profiel®'
+      href: producten/anti-slip-profiel®
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
     image_2:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
-
   afdicht_profiel:
     _component: Split
     eyebrow: Gepatenteerd
     heading: Afdicht profiel®
-    textarea: |
-      Het gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a. galerijen waar men hinder ondervindt van zand en (regen)water wat door de groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven gemonteerd!
+    textarea: >
+      Het gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a.
+      galerijen waar men hinder ondervindt van zand en (regen)water wat door de
+      groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of
+      schroeven gemonteerd!
     button:
       text: Ga naar product
-      href: 'producten/afdicht-profiel'
+      href: producten/afdicht-profiel
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
     image_2:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
-
   inmeetinstructies:
     _component: Cta
     heading: Benieuwd hoeveel je nodig hebt?
     button:
       text: Bekijk inmeetinstructies
-      href: '/inmeetinstructies.pdf'
+      href: /inmeetinstructies.pdf
       target: _blank
-
   anti-slip_strook:
     _component: Split
     heading: Anti-slip strook
-    textarea: |
-      Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten vlonder i.v.m. de schroefgaten.
+    textarea: >
+      Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder
+      d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en
+      geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten
+      vlonder i.v.m. de schroefgaten.
     button:
       text: Ga naar product
-      href: '/producten/afdicht-profiel'
+      href: /producten/afdicht-profiel
     image_1:
       src: https://unsplash.it/400/1200?random=1
       alt: My alt
