@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Lorem ipsum
+  title: Anti-slip oplossingen - Anti-slip Profiles
   description: >-
     orem ipsum dolor, sit amet consectetur adipisicing elit. Error et magni
     minus.
