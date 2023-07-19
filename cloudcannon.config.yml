@@ -11,21 +11,12 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
-      - landing
       - legal
-  - heading: Products
-    collections:
-      - collections
-      - products
-  - heading: Header & Footer
+  - heading: Other
     collections:
       - data
-  - heading: Vertalingen
-    collections:
-      - translations
-  - heading: Header & Footer
-    collections:
-      - data
+      # - translations
+
 # -----------------------------------------------
 # Collection configuration
 # -----------------------------------------------
