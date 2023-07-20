@@ -3,10 +3,11 @@ cta:
   button:
     text: Neem contact op
     href: /contact
-textarea: >-
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+textarea: >+
+  Anti-Slip Profiles, een onderneming gericht op anti-slip producten en
+  ontwikkelen van (anti-slip) profielen. Ons gedachtegoed is dat “eenvoud en
+  kwaliteit” bovenaan staat.
+
 lists:
   - heading: Anti-Slip Profiles ®
     links:
