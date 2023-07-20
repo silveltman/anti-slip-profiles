@@ -3,10 +3,12 @@ cta:
   button:
     text: Neem contact op
     href: /contact
-
-textarea: lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+textarea: >-
+  lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 lists:
-  - heading: Bedrijf
+  - heading: Anti-Slip Profiles®
     links:
       - text: Contact
         href: /contact
@@ -14,7 +16,8 @@ lists:
         href: /algemene-voorwaarden
       - text: Privacyverklaring
         href: /privacyverklaring
-
+      - text: Verzending en Retour voorwaarden
+        href: ''
   - heading: Producten
     links:
       - text: Vlonder Anti-slip Profiel ®
