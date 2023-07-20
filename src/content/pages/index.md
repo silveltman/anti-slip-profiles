@@ -9,7 +9,7 @@ blocks:
   hero:
     _component: Hero
     eyebrow: Gepatenteerde Anti-Slip oplossingen
-    heading: Voorkom een glade vlonder!
+    heading: Uw vlonders anti-slip en/of waterdicht maken!
     button:
       text: Bekijk producten
       href: /producten
