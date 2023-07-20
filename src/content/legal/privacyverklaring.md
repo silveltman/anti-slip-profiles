@@ -3,46 +3,52 @@ seo:
   title: Privacyverklaring
   noindex: true
 ---
-
 # Privacyverklaring
 
-Lorem markdownum abest in dominae neque molle superasque medio utque aliter
-mearum te neganda, discrimine recepto caput? Levem hic patriosque mora. Sacrata
-vel conveniunt, potat. Eam clara male **primo placabat oras**. Alieno in tua
-utilitas, in _virum_, sub sedem et siqua nec Cometen ubi, non _tenet_ vivacia:
-taurum.
+## Wie zijn wij?
 
-## Petit tamen deorum
+Ons website-adres is: vismarkt 5a, 9712CA, Groningen. Fulldev is de verantwoordelijke voor de verwerking van uw persoonsgegevens.
 
-Inania mea superest virtute: suo albentes voce, discidium resilire. Tu agris
-iuncti hoc, modo ore quidque placidis ut aquis per ferventi quia, pes. Arcum
-medio an mutataque, tibi tam, quotiens, ara videbis aut!
+## Welke persoonlijke gegevens we verzamelen en waarom we die verzamelen
 
-Dum movet hac velocius cervice metuam. Coercet ad Rhodope sed nec meminisse
-utilitas mihi [Hermaphroditus niger](http://adspice.net/nolet) aetasque nec
-omnis est fulmen, saevit fugiens. Isset **vota** unda spiro de coepta seque
-odoribus Melampus nisi.
+### Reacties
 
-## Saturnia tertia corpusque et nomine altera luebat
+Als bezoekers reacties achterlaten op de site, verzamelen we de gegevens getoond in het reactieformulier, het IP-adres van de bezoeker en de browser gebruikersagent string om spamdetectie te helpen.
 
-Functa ense est membra: limes in aure agrestis inque iacent tutoque capillis
-scires lacus! Fetus canisve laetabere stimulatus **subigebant reliquit**
-insidias sed sonus coeperat, pacis. Solent adiectoque natus mutabile quid est
-siccis inminet salve est neque mensae, illa undas spatium et dixit imaginis.
+### Contactformulieren
 
-## Telluris cuique matutinis genitor
+Wanneer u een contactformulier invult, verzamelen we de gegevens die u invult, zoals uw naam, e-mailadres, en eventuele andere informatie die u ons verstrekt, om u te kunnen beantwoorden.
 
-Deus nulla illa est liquida, similem. Refert me neve tunicis in harenosi
-ingratos indeploratum verte _scitetur_, posses. Colla pietate adsensere acer
-reperitur tergo Antandro, una pavent mihi, comes. Comitum propensum nostris
-convicia quis visa pyra, _quae via pinu_ longius matres.
+### Cookies
 
-- Generosam tuo quod sui
-- Pluma in aestibus Minervam aequum passibus mille
-- Falso antiquam hanc
-- Ne illum refert ante artis illa
-- Et At vertere urbes non iunctoque reppulit
+Wanneer u een reactie achterlaat op onze site, kunt u aangeven of we uw naam, uw e-mailadres en website in een cookie kunnen opslaan. Dit doen we voor uw gemak zodat u deze gegevens niet opnieuw hoeft in te vullen voor een nieuwe reactie.
 
-Nostra inpulsumque precor videbor. A quoque iactasque iuventus: latus ait
-positasque munera! Texit Almo nubibus natus servaverat, membra sic parte. Esse
-primis metu fatus? Posuisset petens: non rudis postquam?
+## Ingesloten inhoud van andere websites
+
+Berichten op deze site kunnen ingesloten (embedded) inhoud bevatten (bijvoorbeeld video’s, afbeeldingen, berichten, etc.). Ingesloten inhoud van andere websites gedraagt zich exact hetzelfde alsof de bezoeker deze andere website heeft bezocht.
+
+Deze websites kunnen gegevens over u verzamelen, cookies gebruiken, extra tracking van derde partijen insluiten en uw interactie met deze ingesloten inhoud monitoren, inclusief het vastleggen van de interactie met ingesloten inhoud als u een account hebt en bent ingelogd op die website.
+
+## Met wie we uw data delen
+
+\[Uw bedrijfsnaam\] deelt uw persoonlijke gegevens met niemand buiten onze organisatie, tenzij we wettelijk verplicht zijn dit te doen of u hier expliciet toestemming voor geeft.
+
+## Hoe lang we uw data bewaren
+
+Wanneer u een reactie achterlaat dan wordt die reactie en de metadata van die reactie voor altijd bewaard. Op deze manier kunnen we vervolgreacties automatisch herkennen en goedkeuren in plaats van dat we ze moeten modereren.
+
+## Welke rechten u heeft over uw data
+
+Als u reacties heeft achter gelaten, kunt u verzoeken om een exportbestand van uw persoonlijke gegevens die we van u hebben, inclusief alle gegevens die u ons opgegeven heeft. U kunt ook verzoeken dat we enige persoonlijke gegevens die we van u hebben, wissen.
+
+## Wijzigingen in deze privacyverklaring
+
+We kunnen deze privacyverklaring van tijd tot tijd wijzigen. Wijzigingen zullen op deze website worden gepubliceerd.
+
+## Contactinformatie
+
+Bij vragen of verzoeken met betrekking tot deze privacyverklaring kunt u contact opnemen via (uw contactgegevens).
+
+Deze privacyverklaring is voor het laatst bijgewerkt op 18 juli 2023.
+
+Dit is een voorbeeld van een privacyverklaring, en we raden u aan juridisch advies in te winnen voordat u deze op uw website plaatst. Het is belangrijk dat uw privacyverklaring aansluit bij de gegevens die u daadwerkelijk verzamelt, de reden daarvoor, hoe u ze gebruikt, en hoe u ze bewaart.

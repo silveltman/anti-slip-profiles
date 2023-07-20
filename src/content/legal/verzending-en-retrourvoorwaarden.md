@@ -1,48 +1,48 @@
 ---
 seo:
-  title: Algemene voorwaarden
+  title: Verzending en Retour voorwaarden
   noindex: true
 ---
+**Informatie rondom garantie & retour**
 
-# Algemene voorwaarden
+**Retourneren**
 
-Lorem markdownum abest in dominae neque molle superasque medio utque aliter
-mearum te neganda, discrimine recepto caput? Levem hic patriosque mora. Sacrata
-vel conveniunt, potat. Eam clara male **primo placabat oras**. Alieno in tua
-utilitas, in _virum_, sub sedem et siqua nec Cometen ubi, non _tenet_ vivacia:
-taurum.
+U heeft het recht uw bestelling tot 14 dagen na ontvangst zonder opgave van reden te
 
-## Petit tamen deorum
+annuleren. U heeft na annulering nogmaals 14 dagen om uw product retour te sturen. U
 
-Inania mea superest virtute: suo albentes voce, discidium resilire. Tu agris
-iuncti hoc, modo ore quidque placidis ut aquis per ferventi quia, pes. Arcum
-medio an mutataque, tibi tam, quotiens, ara videbis aut!
+krijgt dan het volledige orderbedrag inclusief verzendkosten gecrediteerd. Enkel de kosten
 
-Dum movet hac velocius cervice metuam. Coercet ad Rhodope sed nec meminisse
-utilitas mihi [Hermaphroditus niger](http://adspice.net/nolet) aetasque nec
-omnis est fulmen, saevit fugiens. Isset **vota** unda spiro de coepta seque
-odoribus Melampus nisi.
+voor retour van u thuis naar de webwinkel zijn voor eigen rekening. Indien u gebruik maakt
 
-## Saturnia tertia corpusque et nomine altera luebat
+van uw herroepingsrecht, zal het product met alle geleverde toebehoren en - indien
 
-Functa ense est membra: limes in aure agrestis inque iacent tutoque capillis
-scires lacus! Fetus canisve laetabere stimulatus **subigebant reliquit**
-insidias sed sonus coeperat, pacis. Solent adiectoque natus mutabile quid est
-siccis inminet salve est neque mensae, illa undas spatium et dixit imaginis.
+redelijkerwijze mogelijk - in de originele staat en verpakking aan de ondernemer
 
-## Telluris cuique matutinis genitor
+geretourneerd worden. Om gebruik te maken van dit recht kunt u contact met ons opnemen
 
-Deus nulla illa est liquida, similem. Refert me neve tunicis in harenosi
-ingratos indeploratum verte _scitetur_, posses. Colla pietate adsensere acer
-reperitur tergo Antandro, una pavent mihi, comes. Comitum propensum nostris
-convicia quis visa pyra, _quae via pinu_ longius matres.
+via **info@antislipprofiels.com** Wij zullen vervolgens het verschuldigde orderbedrag binnen
 
-- Generosam tuo quod sui
-- Pluma in aestibus Minervam aequum passibus mille
-- Falso antiquam hanc
-- Ne illum refert ante artis illa
-- Et At vertere urbes non iunctoque reppulit
+14 dagen na aanmelding van uw retour terugstorten mits het product reeds in goede orde
 
-Nostra inpulsumque precor videbor. A quoque iactasque iuventus: latus ait
-positasque munera! Texit Almo nubibus natus servaverat, membra sic parte. Esse
-primis metu fatus? Posuisset petens: non rudis postquam?
+retour ontvangen is.
+
+**Uitzonderingen retourneren**
+
+Vermeldt hier de uitzonderingen op het herroepingsrecht. Geef ook bij het artikel zelf duidelijk aan dat deze niet te retourneren valt voor de consument besteld. **Let op**\: Uitsluiting van het herroepingsrecht is slechts mogelijk voor producten:
+
+a. Bij verzegelde producten. Wanneer de verzegeling verbroken is zijn bij deze producten niet retourneerbaar.
+
+b. die door de ondernemer tot stand zijn gebracht overeenkomstig specificaties van de consument;
+
+c. die duidelijk persoonlijk van aard zijn;d. die door hun aard niet kunnen worden teruggezonden;e. die snel kunnen bederven of verouderen;f. waarvan de prijs gebonden is aan schommelingen op de financiële markt waarop de
+
+ondernemer geen invloed heeft;g. voor losse kranten en tijdschriften;h. voor audio- en video-opnamen en computersoftware waarvan de consument de
+
+verzegeling heeft verbroken.
+
+**Identiteit ondernemer**
+
+Bedrijf: AntislipprofilesAdres: Parkweg 2Postcode: 8191 jl Wapenveld E-mail: info@antislipprofiels.com Telefoon: 06-16715746
+
+KVK nummer: 62603299BTW nummer: NL001583486B36
