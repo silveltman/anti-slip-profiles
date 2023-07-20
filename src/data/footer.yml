@@ -18,7 +18,7 @@ lists:
       - text: Privacyverklaring
         href: /privacyverklaring
       - text: Verzending en Retour voorwaarden
-        href: ''
+        href: '/verzending-en-retrourvoorwaarden'
   - heading: Producten
     links:
       - text: Vlonder Anti-slip Profiel ®

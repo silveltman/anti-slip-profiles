@@ -18,13 +18,17 @@
 
 <Section class="max-lg:pt-0">
   <Container>
-    <Stack row>
+    <Stack
+      row
+      class="items-start"
+    >
       <GalleryScroll
-        ratio={4 / 3}
+        ratio={4 / 2.62}
         class="lg:col-span-2"
       >
         {#each product.images.nodes as image}
           <Image
+            class="!rounded-[0px]"
             src={image.url}
             alt={image.altText}
           />
