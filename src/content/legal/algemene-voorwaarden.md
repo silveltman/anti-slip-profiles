@@ -17,7 +17,7 @@ seo:
    5. 2\.5. &nbsp;Indien onduidelijkheid bestaat omtrent de uitleg van één of meerdere bepalingen of zich een situatie voordoet die niet in deze voorwaarden zijn opgenomen, dan dient de uitleg plaats te vinden ‘naar de geest’ van deze bepalingen.
    6. 2\.6. &nbsp;De Algemene Voorwaarden zijn mede van toepassing op alle latere leveringen en Overeenkomsten tussen Partijen.
    7. 2\.7. &nbsp;Anti-Slip Profiles is gerechtigd de Algemene Voorwaarden te wijzigen of aan te vullen. Anti- Slip Profiles heeft het recht Opdrachtgever van een wijziging elektronisch op de hoogte te stellen.
-2. **Offertes en aanbiedingen** 3\.1. Alle offertes en aanbiedingen van Anti-Slip Profiles zijn vrijblijvend, tenzij in de offerte een termijn voor aanvaarding is gesteld. Indien geen aanvaardingstermijn is gesteld, kan aan de offerte of aanbieding geen enkel recht worden ontleend.
+2. **Offertes en aanbiedingen** 3.1. Alle offertes en aanbiedingen van Anti-Slip Profiles zijn vrijblijvend, tenzij in de offerte een termijn voor aanvaarding is gesteld. Indien geen aanvaardingstermijn is gesteld, kan aan de offerte of aanbieding geen enkel recht worden ontleend.
 
 1
 
