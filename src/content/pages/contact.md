@@ -10,7 +10,7 @@ suppliers:
     address: Adress Netherlands
     email: info@antislipprofiles.com
     form_key:
-    phone: +31 850604966
+    phone: '+31 850604966 '
   scandinavia:
     address: Adress Scandinavia
     email: info@antislipprofiles.com
