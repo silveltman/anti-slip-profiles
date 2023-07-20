@@ -22,13 +22,13 @@
       <div class="order flex w-full gap-md lg:col-span-3">
         <Image
           class="mt-xl shadow-lg"
-          src="/vlonder-far.jpg"
-          alt="image"
+          src={content.image_1.src}
+          alt={content.image_1.alt}
         />
         <Image
           class="mb-xl shadow-lg"
-          src="/vlonder-close.jpg"
-          alt="image"
+          src={content.image_2.src}
+          alt={content.image_2.alt}
         />
       </div>
       <Highlight class="lg:col-span-2">

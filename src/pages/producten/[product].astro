@@ -22,5 +22,8 @@ const { product, products } = Astro.props
     product={product}
   />
   <ProductDetails product={product} />
-  <ProductCarousel products={products} />
+  <ProductCarousel
+    currentHandle={product.handle}
+    products={products}
+  />
 </Layout>

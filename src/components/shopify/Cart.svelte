@@ -1,7 +1,8 @@
 <script lang="ts">
   import cartStore from '@stores/CartStore.js'
-  import { Icon, Drawer, Heading, Button } from 'fulldev-ui'
+  import { Icon, Drawer, Heading, Button, Text } from 'fulldev-ui'
   import CartLine from './CartLine.svelte'
+  import Money from './Money.svelte'
 
   let animating = false
 
@@ -52,7 +53,7 @@
     >
       <div class="flex items-center justify-between">
         <span class="text-base-11">Totaal:</span>
-        €{$cartStore.cost.totalAmount.amount.replace('.', ',')}
+        <Money money={$cartStore.cost.totalAmount} />
       </div>
       <!-- <p class="text-center text-base-11">Verzendkosten bij afrekenen</p> -->
       <Button
@@ -62,6 +63,11 @@
         disabled={$cartStore.lines.nodes.length > 0 ? false : true}
         href={$cartStore ? $cartStore.checkoutUrl : undefined}
       />
+      <Text
+        secondary
+        class="!text-base-11 small"
+        >Verzendkosten worden berekend bij het afrekenen</Text
+      >
     </div>
   {:else}
     <div class="flex w-full flex-col items-center justify-center gap-md py-xl">

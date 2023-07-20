@@ -4,8 +4,6 @@ import Head from '@components/helpers/Head.astro'
 import TheHeader from '@components/TheHeader.svelte'
 import TheFooter from '@components/TheFooter.svelte'
 import { Whatsapp } from 'fulldev-ui'
-import CartLines from '@components/shopify/CartLine.svelte'
-import Cart from '@components/shopify/Cart.svelte'
 
 const { seo } = Astro.props
 ---
@@ -19,9 +17,9 @@ const { seo } = Astro.props
     <Head {seo} />
   </head>
   <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
-  <body class="light-orange overflow-visible bg-base-2">
+  <body class="light-orange w-full bg-base-2">
     <TheHeader client:load />
-    <main class="light">
+    <main class="light overflow-x-hidden">
       <slot />
     </main>
     <Whatsapp tel="#" />

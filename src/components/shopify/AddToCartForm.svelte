@@ -1,6 +1,7 @@
 <script lang="ts">
   import { addToCart } from '@utils/shopify'
   import { Button, Select, Input, Text } from 'fulldev-ui'
+  import Money from '@components/shopify/Money.svelte'
 
   export let product
   let quantity = '1'
@@ -54,7 +55,7 @@
     {/if}
   {/each}
   <Text class="!text-md font-heading large">
-    €{selectedVariant?.priceV2.amount}
+    <Money money={selectedVariant?.priceV2} />
   </Text>
   <div class="flex gap-sm">
     <Input

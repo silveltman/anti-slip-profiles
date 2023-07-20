@@ -19,7 +19,7 @@
               as="h5"
               text={card.heading}
               data-rosey={card.heading}
-            />
+            />.
             <Text
               class="inline !text-base-11"
               text={card.textarea}

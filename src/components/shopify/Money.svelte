@@ -9,7 +9,7 @@
   // Add leading zero if needed
   function formatAmount(amount: string): string {
     const [integerPart, decimalPart] = amount.split('.')
-    const formattedDecimalPart = decimalPart.padStart(2, '0')
+    const formattedDecimalPart = decimalPart.padEnd(2, '0')
     return `${integerPart},${formattedDecimalPart}`
   }
 </script>
