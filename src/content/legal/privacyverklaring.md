@@ -7,7 +7,7 @@ seo:
 
 ## Wie zijn wij?
 
-Ons website-adres is: vismarkt 5a, 9712CA, Groningen. Fulldev is de verantwoordelijke voor de verwerking van uw persoonsgegevens.
+Gevestigd op Parkweg 2 8191JL Wapenveld Netherlands. Anti-slip profiles is de verantwoordelijke voor de verwerking van uw persoonsgegevens.
 
 ## Welke persoonlijke gegevens we verzamelen en waarom we die verzamelen
 
