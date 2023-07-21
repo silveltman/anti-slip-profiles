@@ -49,5 +49,7 @@
       {...link}
     />
   {/each}
-  <Cart />
+  <div>
+    <Cart />
+  </div>
 </Navbar>
