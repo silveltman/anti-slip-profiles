@@ -18,7 +18,7 @@
 >
   <Container>
     <Stack
-      class=" items-center justify-between gap-3xl"
+      class=" items-center justify-between !gap-3xl"
       row
     >
       <div class="order imgwrap flex w-full flex-col gap-md">
