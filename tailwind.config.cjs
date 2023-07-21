@@ -50,7 +50,7 @@ module.exports = {
           name: 'light',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.slate),
+              base: getRadixColors(radixColors.sand),
               'base-9-content': 'white',
             },
           },
@@ -59,7 +59,7 @@ module.exports = {
           name: 'dark',
           extend: {
             colors: {
-              base: getRadixColors(radixColors.slateDark),
+              base: getRadixColors(radixColors.sandDark),
               'base-9-content': 'white',
             },
           },

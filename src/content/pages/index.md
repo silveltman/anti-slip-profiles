@@ -1,10 +1,8 @@
 ---
 seo:
   title: Anti-slip oplossingen - Anti-slip Profiles
-  description: >-
-    orem ipsum dolor, sit amet consectetur adipisicing elit. Error et magni
-    minus.
-  image: /placeholder.png
+  description:
+  image: ''
 blocks:
   hero:
     _component: Hero
@@ -54,11 +52,11 @@ blocks:
       text: Ga naar product
       href: producten/anti-slip-profiel®
     image_1:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/anti-slipprofiles-145-large.jpeg
+      alt:
     image_2:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/anti-slipprofiles-162-large.jpeg
+      alt:
   afdicht_profiel:
     _component: Split
     eyebrow: Gepatenteerd
@@ -72,11 +70,11 @@ blocks:
       text: Ga naar product
       href: producten/afdicht-profiel
     image_1:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/anti-slipprofiles-148-large.jpeg
+      alt:
     image_2:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/anti-slipprofiles-156-large.jpeg
+      alt:
   inmeetinstructies:
     _component: Cta
     heading: Welk type profiel heeft u nodig voor uw vlonder?
@@ -96,9 +94,9 @@ blocks:
       text: Ga naar product
       href: /producten/afdicht-profiel
     image_1:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/vooraanzicht-strook-geel-met-spenglerschroef-555x368.webp
+      alt:
     image_2:
-      src: https://unsplash.it/400/700?random=1
-      alt: My alt
+      src: /uploads/bovenaanzicht-strook-geel-2-x-gele-schroef-555x368.webp
+      alt:
 ---

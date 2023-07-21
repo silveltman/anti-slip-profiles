@@ -11,15 +11,15 @@ const { seo } = Astro.props
 <!DOCTYPE html>
 <html
   lang={site.lang}
-  class="color-scheme-light medium"
+  class="color-scheme-light light bg-base-1 medium"
 >
   <head>
     <Head {seo} />
   </head>
   <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
-  <body class="light-orange w-full bg-base-2">
+  <body class="w-full">
     <TheHeader client:load />
-    <main class="light overflow-x-hidden">
+    <main class="light overflow-x-hidden bg-base-1">
       <slot />
     </main>
     <Whatsapp tel="#" />
