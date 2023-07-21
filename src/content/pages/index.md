@@ -55,7 +55,7 @@ blocks:
       src: /uploads/anti-slipprofiles-145-large.jpeg
       alt:
     image_2:
-      src: /uploads/anti-slipprofiles-180-large.jpeg
+      src: /uploads/anti-slipprofiles-162-large.jpeg
       alt:
   afdicht_profiel:
     _component: Split
@@ -73,7 +73,7 @@ blocks:
       src: /uploads/anti-slipprofiles-148-large.jpeg
       alt:
     image_2:
-      src: /uploads/anti-slipprofiles-184-large.jpeg
+      src: /uploads/anti-slipprofiles-156-large.jpeg
       alt:
   inmeetinstructies:
     _component: Cta
