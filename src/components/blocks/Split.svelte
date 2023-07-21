@@ -14,17 +14,15 @@
 </script>
 
 <Section
-  class="product-split [&+.product-split_.img1]:lg:order-2 [&+.product-split_.imgwrap]:lg:pl-xl [&+.product-split_.imgwrap]:lg:pr-0  [&+.product-split_.order]:lg:order-2"
+  class="product-split [&+.product-split_.img1]:lg:order-2 [&+.product-split_.order]:lg:order-2"
 >
   <Container>
     <Stack
-      class=" items-center gap-2xl "
+      class=" items-center justify-between gap-3xl"
       row
     >
-      <div
-        class="order imgwrap flex w-full flex-col gap-md pr-xl lg:col-span-3"
-      >
-        <div class="img1 pr-xl">
+      <div class="order imgwrap flex w-full flex-col gap-md">
+        <div class="pr-xl">
           <Image
             class="shadow-lg"
             src={content.image_1.src}
@@ -39,7 +37,7 @@
           />
         </div>
       </div>
-      <Highlight class="lg:col-span-2">
+      <Highlight class="lg:max-w-lg">
         {#if content.eyebrow}
           <Text
             class="light-orange"
