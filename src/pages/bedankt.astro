@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content'
+import LayoutProse from '@layouts/LayoutProse.astro'
+
+const seo = {
+  title: 'Bedankt voor je bericht!',
+  noinex: true,
+}
+---
+
+<LayoutProse seo={seo}>
+  <div class="flex flex-col items-center text-center">
+    <h2>Bedankt voor je bericht!</h2>
+    <p>Je hoort zo spoedig mogelijk van ons.</p>
+  </div>
+</LayoutProse>

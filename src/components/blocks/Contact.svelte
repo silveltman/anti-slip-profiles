@@ -99,7 +99,10 @@
           {i === 0 ? 'flex peer-checked:hidden' : 'hidden peer-checked:flex'}
           "
           >
-            <Form key={supplier._form_key}>
+            <Form
+              key={supplier._form_key}
+              action="/bedankt"
+            >
               <div class="flex flex-col">
                 <Text
                   secondary
