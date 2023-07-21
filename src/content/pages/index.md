@@ -1,10 +1,8 @@
 ---
 seo:
   title: Anti-slip oplossingen - Anti-slip Profiles
-  description: >-
-    orem ipsum dolor, sit amet consectetur adipisicing elit. Error et magni
-    minus.
-  image: /placeholder.png
+  description:
+  image: ''
 blocks:
   hero:
     _component: Hero
@@ -54,7 +52,7 @@ blocks:
       text: Ga naar product
       href: producten/anti-slip-profiel®
     image_1:
-      src: https://unsplash.it/400/200?random=1
+      src:
       alt: My alt
     image_2:
       src: https://unsplash.it/400/200?random=1
