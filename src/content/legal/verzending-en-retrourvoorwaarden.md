@@ -3,6 +3,7 @@ seo:
   title: Verzending en Retour voorwaarden
   noindex: true
 ---
+
 **Informatie rondom garantie & retour**
 
 **Retourneren**
@@ -43,6 +44,6 @@ verzegeling heeft verbroken.
 
 **Identiteit ondernemer**
 
-Bedrijf: AntislipprofilesAdres: Parkweg 2Postcode: 8191 jl Wapenveld E-mail: info@antislipprofiels.com Telefoon: 06-16715746
+Bedrijf: AntislipprofilesAdres: Parkweg 2Postcode: 8191 jl Wapenveld E-mail: info@antislipprofiels.com Telefoon: 0850604966
 
 KVK nummer: 62603299BTW nummer: NL001583486B36

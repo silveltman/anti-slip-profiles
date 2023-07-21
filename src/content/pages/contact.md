@@ -22,7 +22,7 @@ blocks:
       phone:
         icon: phone
         heading: Telefoon
-        text: '+31616715746'
+        text: '085 0604966'
         href:
       email:
         icon: email
