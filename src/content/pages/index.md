@@ -54,10 +54,10 @@ blocks:
       text: Ga naar product
       href: producten/anti-slip-profiel®
     image_1:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
     image_2:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
   afdicht_profiel:
     _component: Split
@@ -72,10 +72,10 @@ blocks:
       text: Ga naar product
       href: producten/afdicht-profiel
     image_1:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
     image_2:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
   inmeetinstructies:
     _component: Cta
@@ -96,9 +96,9 @@ blocks:
       text: Ga naar product
       href: /producten/afdicht-profiel
     image_1:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
     image_2:
-      src: https://unsplash.it/400/700?random=1
+      src: https://unsplash.it/400/200?random=1
       alt: My alt
 ---
