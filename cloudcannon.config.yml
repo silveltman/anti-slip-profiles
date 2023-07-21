@@ -92,3 +92,8 @@ _inputs:
   href:
     type: url
     label: Link
+
+  src:
+    type: image
+    label: Upload
+    correct_orientation: false
