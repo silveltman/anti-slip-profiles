@@ -45,12 +45,14 @@
         </Text>
         <svelte:fragment slot="actions">
           <AddToCartForm {product} />
-          <Button
-            target="_blank"
-            variant="soft"
-            class="light-orange w-full"
-            href="/inmeetinstructies.pdf">Bekijk inmeetinstructies</Button
-          >
+          {#if product.handle.includes('anti-slip-profiel') || product.handle.includes('afdicht-profiel')}
+            <Button
+              target="_blank"
+              variant="soft"
+              class="light-orange w-full"
+              href="/inmeetinstructies.pdf">Bekijk inmeetinstructies</Button
+            >
+          {/if}
         </svelte:fragment>
       </Highlight>
     </Stack>
