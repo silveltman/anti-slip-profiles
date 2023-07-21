@@ -27,8 +27,8 @@ interface Site {
 }
 
 const site: Site = {
-  name: 'Company Name',
-  url: 'https://localhost:3000',
+  name: 'Anti-slip Profiles',
+  url: 'https://antislipprofiles.com',
   image: '/logo.svg',
   logo: '/logo.svg',
   lang: 'nl',
