@@ -94,9 +94,9 @@ blocks:
       text: Ga naar product
       href: /producten/afdicht-profiel
     image_1:
-      src: /uploads/vooraanzicht-strook-geel-met-spenglerschroef-555x368.webp
+      src: /uploads/vooraanzicht-strook-zwart-met-schroef-op-kleur.jpg
       alt:
     image_2:
-      src: /uploads/bovenaanzicht-strook-geel-2-x-gele-schroef-555x368.webp
+      src: /uploads/bovenaanzicht-strook-zwart-met-schroef-op-kleur.jpg
       alt:
 ---
