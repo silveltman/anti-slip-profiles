@@ -45,7 +45,7 @@
   {#each header.links as link}
     <Link
       class="max-lg:hidden"
-      data-rosey={link.text}
+      data-roseyr={link.text}
       {...link}
     />
   {/each}

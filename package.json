@@ -16,6 +16,7 @@
     "rosey:build": "npx rosey build --source dist --default-language nl"
   },
   "dependencies": {
+    "@astrojs/partytown": "^1.2.3",
     "@astrojs/prefetch": "^0.2.3",
     "@astrojs/sitemap": "^1.3.1",
     "@astrojs/svelte": "^2.2.0",
