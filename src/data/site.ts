@@ -29,7 +29,7 @@ interface Site {
 const site: Site = {
   name: 'Anti-slip Profiles',
   url: 'https://antislipprofiles.com',
-  image: '/logo.svg',
+  image: '/product.jpg',
   logo: '/logo.svg',
   lang: 'nl',
   googleFonts: {
