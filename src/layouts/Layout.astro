@@ -14,20 +14,22 @@ const { seo } = Astro.props
   class="color-scheme-light light bg-base-1 medium"
 >
   <head>
+    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NJKM2RT5');</script>
+    <!-- End Google Tag Manager -->
     <Head {seo} />
     <meta name="google-site-verification" content="PN7eFzuPVAtqxr9K9wRWm3EzYjdgc4wRhsSRiabA9AY" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GT-PLVVR8D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'GT-PLVVR8D');
-</script>
   </head>
   <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
   <body class="w-full">
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJKM2RT5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <TheHeader client:load />
     <main class="light overflow-x-hidden bg-base-1">
       <slot />
