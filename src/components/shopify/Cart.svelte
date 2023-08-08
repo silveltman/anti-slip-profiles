@@ -14,7 +14,6 @@
 
   async function onQuantityChange(totalQuantity) {
     animating = true
-    console.log()
     await new Promise((resolve) => setTimeout(resolve, 800)) // Animation duration (200ms)
     animating = false
   }

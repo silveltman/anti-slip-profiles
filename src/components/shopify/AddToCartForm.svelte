@@ -27,6 +27,11 @@
   async function onSubmit() {
     console.log('selectedVariant', selectedVariant)
     await addToCart(selectedVariant.id, parseInt(quantity))
+
+    const checkbox = document.getElementById('drawer-right')
+    if (checkbox) {
+      checkbox.checked = true
+    }
   }
 </script>
 
