@@ -22,7 +22,8 @@ export default defineConfig({
   site: site.url,
   integrations: [tailwind(), svelte(), sitemap(), prefetch(), robotsTxt(), partytown({
     config: {
-      forward: ["dataLayer.push"]
+      forward: ["dataLayer.push"],
+      debug: true,
     }
   })],
   vite: {
