@@ -50,7 +50,7 @@ blocks:
       seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
     button:
       text: Ga naar product
-      href: producten/anti-slip-profiel®
+      href: producten/anti-slip-profiel
     image_1:
       src: /uploads/anti-slipprofiles-145-large.jpeg
       alt:
