@@ -42,7 +42,7 @@ blocks:
   anti-slip_profiel:
     _component: Split
     eyebrow: Gepatenteerd
-    heading: Anti-slip profiel®
+    heading: Antislip profiel®
     textarea: >
       Het gepatenteerde vlonder antislip-profiel is voorzien van een
       antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit,
