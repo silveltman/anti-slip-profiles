@@ -62,10 +62,10 @@ blocks:
     eyebrow: Gepatenteerd
     heading: Afdicht profiel®
     textarea: >
-      Het gepatenteerde vlonder afdicht-profiel is ontwikkeld voor o.a.
-      galerijen waar men hinder ondervindt van zand en (regen)water wat door de
-      groeven naar beneden valt. Ook dit product wordt zonder kit, lijm of
-      schroeven gemonteerd!
+      Het gepatenteerde vlonder afdichtprofiel is ontwikkeld voor o.a. galerijen
+      waar men hinder ondervindt van zand en (regen)water wat door de groeven
+      naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven
+      gemonteerd!
     button:
       text: Ga naar product
       href: producten/afdicht-profiel
@@ -84,9 +84,9 @@ blocks:
       target: _blank
   anti-slip_strook:
     _component: Split
-    heading: Anti-slip strook
+    heading: Antislip strook
     textarea: >
-      Vlonder Anti-Slip Stroken zijn eenvoudig te plaatsen op uw houten vlonder
+      Vlonder Antislip Stroken zijn eenvoudig te plaatsen op uw houten vlonder
       d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en
       geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten
       vlonder i.v.m. de schroefgaten.
