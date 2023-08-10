@@ -25,13 +25,13 @@ blocks:
     card_2:
       heading: Uniek
       textarea: >-
-        Onze gepatenteerde anti-slip- en afdichtprofielen zijn uniek, uw vlonder
-        van hout of composiet maakt u anti-slip en spatwaterdicht met een
+        Onze gepatenteerde antislip- en afdichtprofielen zijn uniek, uw vlonder
+        van hout of composiet maakt u antislip en spatwaterdicht met een
         product! De uitstraling van uw vlonder blijft intact!
     card_3:
       heading: Uw voordeel
       textarea: >-
-        Anti-slip- en afdichtprofielen zijn eenvoudig zelf te plaatsen, dat
+        Antislip- en afdichtprofielen zijn eenvoudig zelf te plaatsen, dat
         scheelt extra plaatsingskosten t.o.v. andere producten.
   proefpakket:
     _component: Cta
