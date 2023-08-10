@@ -44,9 +44,9 @@ blocks:
     eyebrow: Gepatenteerd
     heading: Antislip profiel®
     textarea: >
-      Het gepatenteerde vlonder antislip-profiel is voorzien van een
-      antislip-strip, eenvoudig te plaatsen zonder gebruik te maken van kit,
-      lijm of schroeven! Voor zowel hout als composiet vlonderdelen en in alle
+      Het gepatenteerde vlonder antislipprofiel is voorzien van een
+      antislipstrip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm
+      of schroeven! Voor zowel hout als composiet vlonderdelen en in alle
       seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
     button:
       text: Ga naar product
