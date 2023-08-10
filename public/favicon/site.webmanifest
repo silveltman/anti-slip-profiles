@@ -1,6 +1,6 @@
 {
-    "name": "Anti-slip Profiles",
-    "short_name": "Anti-slip Profiles",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#fef9f4",
-    "background_color": "#fef9f4",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
