@@ -8,7 +8,7 @@ blocks:
     _component: HeroSecondary
     heading: Al onze producten
     textarea: >
-      Anti-slip profiles biedt oplossingen voor het anti-slip en
+      Antislip profiles biedt oplossingen voor het antislip en
       (spat)waterdichtmaken van houten- en composietvlonders zonder het aanzicht
       van uw vlonder aan te tasten.
   products:
