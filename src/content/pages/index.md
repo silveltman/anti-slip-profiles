@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Anti-slip oplossingen - Anti-slip Profiles
+  title: Antislip oplossingen - Antislip Profiles
   description:
   image: ''
 blocks:
