@@ -7,7 +7,7 @@ blocks:
   hero:
     _component: Hero
     eyebrow: Gepatenteerde Antislip oplossingen
-    heading: Uw vlonders antislip en/of waterdicht maken!
+    heading: Uw vlonder van hout of composiet eenvoudig antislip maken!
     button:
       text: Bekijk producten
       href: /producten
