@@ -6,8 +6,8 @@ seo:
 blocks:
   hero:
     _component: Hero
-    eyebrow: Gepatenteerde Anti-Slip oplossingen
-    heading: Uw vlonders anti-slip en/of waterdicht maken!
+    eyebrow: Gepatenteerde Antislip oplossingen
+    heading: Uw vlonders antislip en/of waterdicht maken!
     button:
       text: Bekijk producten
       href: /producten
