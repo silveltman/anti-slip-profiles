@@ -55,7 +55,7 @@ blocks:
       src: /uploads/anti-slipprofiles-1949.jpg
       alt: antislip profiel
     image_2:
-      src: /uploads/anti-slipprofiles-1934.jpg
+      src: /uploads/anti-slipprofiles-162-large.jpeg
       alt: antislip profiel
   afdicht_profiel:
     _component: Split
