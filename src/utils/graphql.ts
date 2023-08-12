@@ -18,6 +18,11 @@ fragment productFragment on Product {
     name
     values
   }
+  metafield(key: "checklist", namespace: "custom") {
+    id
+    key
+    value
+  }
   variants(first: 250) {
     nodes {
       id
