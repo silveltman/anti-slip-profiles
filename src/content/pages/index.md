@@ -70,8 +70,8 @@ blocks:
       text: Ga naar product
       href: producten/afdicht-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-148-large.jpeg
-      alt:
+      src: /uploads/anti-slipprofiles-1945.jpg
+      alt: afdichtprofiel
     image_2:
       src: /uploads/anti-slipprofiles-156-large.jpeg
       alt:
