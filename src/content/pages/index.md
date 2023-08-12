@@ -52,11 +52,11 @@ blocks:
       text: Ga naar product
       href: producten/anti-slip-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-145-large.jpeg
+      src: /uploads/anti-slipprofiles-1949.jpg
       alt: antislip profiel
     image_2:
       src: /uploads/anti-slipprofiles-162-large.jpeg
-      alt:
+      alt: antislip profiel
   afdicht_profiel:
     _component: Split
     eyebrow: Gepatenteerd
@@ -70,8 +70,8 @@ blocks:
       text: Ga naar product
       href: producten/afdicht-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-148-large.jpeg
-      alt:
+      src: /uploads/anti-slipprofiles-1945.jpg
+      alt: afdichtprofiel
     image_2:
       src: /uploads/anti-slipprofiles-156-large.jpeg
       alt:
