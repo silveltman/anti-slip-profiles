@@ -5,7 +5,6 @@
   export let line
 
   function removeLine() {
-    console.log('remove line:', line)
     removeCartLine(line.id)
   }
 </script>

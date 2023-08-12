@@ -6,6 +6,7 @@
     Highlight,
     Section,
     Text,
+    Icon,
     Heading,
     Image,
     Button,
@@ -14,6 +15,8 @@
   import AddToCartForm from './shopify/AddToCartForm.svelte'
 
   export let product
+
+  console.log(product)
 </script>
 
 <Section class="max-lg:pt-0">
@@ -36,13 +39,28 @@
       </GalleryScroll>
       <Highlight class="sticky top-lg">
         <Heading text={product.title} />
-        <Text class="!text-base-11">
-          {product.description}
+        {#if product.metafield}
+          <ul>
+            {#each JSON.parse(product.metafield.value) as item}
+              <li class="items.center inline-flex gap-sm text-sm text-base-11">
+                <Icon
+                  name="check"
+                  size="xs"
+                  class="light-orange shrink-0 text-base-9"
+                />
+                {item}
+              </li>
+            {/each}
+          </ul>
+        {:else}
+          <Text class="!text-base-11">
+            {product.description}
+          </Text>
           <Link
-            class="light-orange pl-sm"
-            href="#product-beschrijving">Meer info</Link
+            class="light-orange"
+            href="#product-beschrijving">+ Meer over dit product</Link
           >
-        </Text>
+        {/if}
         <svelte:fragment slot="actions">
           <AddToCartForm {product} />
           {#if product.handle.includes('anti-slip-profiel') || product.handle.includes('afdicht-profiel')}

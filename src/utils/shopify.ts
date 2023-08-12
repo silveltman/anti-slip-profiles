@@ -85,12 +85,10 @@ export async function addToCart(merchandiseId: string, quantity: number) {
 
 export async function removeCartLine(lineId: string) {
   const cartId = localStorage.cartId
-  console.log(cartId)
   const removedLineCart = await fetchStorefront(CartLinesRemoveMutation, {
     cartId,
     lineIds: [lineId],
   })
-  console.log('cart with removed line:', removedLineCart.cartLinesRemove.cart)
   cartStore.set(removedLineCart.cartLinesRemove.cart)
   return removedLineCart.cartLinesRemove.cart
 }
