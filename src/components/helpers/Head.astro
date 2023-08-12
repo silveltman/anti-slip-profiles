@@ -22,31 +22,53 @@ const mergedSeo = {
 }
 ---
 
-<script is:inline>
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    dataLayer.push(arguments)
-  }
+<script type="text/javascript">
+  !(function () {
+    var e = (window.rudderanalytics = window.rudderanalytics || [])
+    ;(e.methods = [
+      'load',
+      'page',
+      'track',
+      'identify',
+      'alias',
+      'group',
+      'ready',
+      'reset',
+      'getAnonymousId',
+      'setAnonymousId',
+      'getUserId',
+      'getUserTraits',
+      'getGroupId',
+      'getGroupTraits',
+      'startSession',
+      'endSession',
+    ]),
+      (e.factory = function (t) {
+        return function () {
+          e.push([t].concat(Array.prototype.slice.call(arguments)))
+        }
+      })
+    for (var t = 0; t < e.methods.length; t++) {
+      var r = e.methods[t]
+      e[r] = e.factory(r)
+    }
+    ;(e.loadJS = function (e, t) {
+      var r = document.createElement('script')
+      ;(r.type = 'text/javascript'),
+        (r.async = !0),
+        (r.src = 'https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js')
+      var a = document.getElementsByTagName('script')[0]
+      a.parentNode.insertBefore(r, a)
+    }),
+      e.loadJS(),
+      e.load(
+        '2TtvBVbEm7PstC01lmlDl1TXbbm',
+        'https://fullsilqdulocq.dataplane.rudderstack.com'
+      ),
+      e.page()
+  })()
 </script>
-<!-- Google Tag Manager -->
-<script is:inline>
-  ;(function (w, d, s, l, i) {
-    w[l] = w[l] || []
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : ''
-    j.async = true
-    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-    f.parentNode.insertBefore(j, f)
-  })(window, document, 'script', 'dataLayer', 'GTM-NJKM2RT5')
-</script>
-<!-- End Google Tag Manager --><!-- <script
-  is:inline
-  defer
-  data-domain="antislipprofiles.com"
-  src="https://plausible.io/js/script.js"
-></script> --><!-- LiveSession.io code -->
+
 <script type="text/javascript" is:inline>
   window['__ls_namespace'] = '__ls'
   window['__ls_script_url'] = 'https://cdn.livesession.io/track.js'
