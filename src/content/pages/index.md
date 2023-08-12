@@ -52,7 +52,7 @@ blocks:
       text: Ga naar product
       href: producten/anti-slip-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-145-large.jpeg
+      src: /uploads/anti-slipprofiles-1949.jpg
       alt: antislip profiel
     image_2:
       src: /uploads/anti-slipprofiles-162-large.jpeg
