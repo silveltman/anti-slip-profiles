@@ -15,24 +15,9 @@ const { seo } = Astro.props
 >
   <head>
     <Head {seo} />
-    <meta
-      name="google-site-verification"
-      content="PN7eFzuPVAtqxr9K9wRWm3EzYjdgc4wRhsSRiabA9AY"
-    />
   </head>
   <!--  Temporary oveflow-visile, to overwrite fuldlev plugin overflow-hidden. This causes whatsapp button to be mispositioned -->
   <body class="w-full">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NJKM2RT5"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe></noscript
-    >
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- End Google Tag Manager (noscript) -->
     <TheHeader client:load />
     <main class="light overflow-x-hidden bg-base-1">
       <slot />
