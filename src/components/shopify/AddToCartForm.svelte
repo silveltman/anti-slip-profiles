@@ -26,7 +26,6 @@
 
   async function onSubmit() {
     await addToCart(selectedVariant.id, parseInt(quantity))
-    rudderanalytics.track('Button Clicked')
     const checkbox = document.getElementById('drawer-right')
     if (checkbox) {
       checkbox.checked = true
