@@ -9,8 +9,12 @@ const seo = {
 ---
 
 <LayoutProse seo={seo}>
-  <script is:inline>
-    rudderanalytics.page('bedankt_page_view')
+  <script is:inline defer>
+    function rudderanalyticsPageView() {
+      rudderanalytics.page('bedankt_page_view')
+      console.log('fired rudder')
+    }
+    rudderanalytics()
   </script>
   <div class="flex flex-col items-center text-center">
     <h2>Bedankt voor je bericht!</h2>
