@@ -65,8 +65,12 @@ const mergedSeo = {
         '2U4b8RZqZrE28N0SMdRtGFNibgq',
         'https://antislipprcqfo.dataplane.rudderstack.com'
       ),
-      e.page()
+      e.page('pages', 'all_pages')
   })()
+
+  rudderanalytics.ready(() => {
+    console.log('All set!')
+  })
 </script>
 
 <meta
