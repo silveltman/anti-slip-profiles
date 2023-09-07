@@ -20,12 +20,7 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: site.url,
-  integrations: [tailwind(), svelte(), sitemap(), prefetch(), robotsTxt(), partytown({
-    config: {
-      forward: ["dataLayer.push"],
-      debug: true,
-    }
-  })],
+  integrations: [tailwind(), svelte(), sitemap(), prefetch(), robotsTxt()],
   vite: {
     plugins: [yaml()]
   }
