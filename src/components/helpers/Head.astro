@@ -22,6 +22,19 @@ const mergedSeo = {
 }
 ---
 
+<meta
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+  name="viewport"
+/>
+<meta
+  name="generator"
+  content={Astro.generator}
+/>
+
+<SEO {...mergedSeo} />
+<Fonts />
+<Favicon />
+
 <script type="text/javascript" is:inline>
   !(function () {
     var e = (window.rudderanalytics = window.rudderanalytics || [])
@@ -68,16 +81,3 @@ const mergedSeo = {
       e.page()
   })()
 </script>
-
-<meta
-  content="width=device-width, initial-scale=1, viewport-fit=cover"
-  name="viewport"
-/>
-<meta
-  name="generator"
-  content={Astro.generator}
-/>
-
-<SEO {...mergedSeo} />
-<Fonts />
-<Favicon />
