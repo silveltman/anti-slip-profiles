@@ -24,53 +24,6 @@ const mergedSeo = {
 
 <script type="text/javascript" is:inline>
   !(function () {
-    var e = (window.rudderanalytics = window.rudderanalytics || [])
-    ;(e.methods = [
-      'load',
-      'page',
-      'track',
-      'identify',
-      'alias',
-      'group',
-      'ready',
-      'reset',
-      'getAnonymousId',
-      'setAnonymousId',
-      'getUserId',
-      'getUserTraits',
-      'getGroupId',
-      'getGroupTraits',
-      'startSession',
-      'endSession',
-    ]),
-      (e.factory = function (t) {
-        return function () {
-          e.push([t].concat(Array.prototype.slice.call(arguments)))
-        }
-      })
-    for (var t = 0; t < e.methods.length; t++) {
-      var r = e.methods[t]
-      e[r] = e.factory(r)
-    }
-    ;(e.loadJS = function (e, t) {
-      var r = document.createElement('script')
-      ;(r.type = 'text/javascript'),
-        (r.async = !0),
-        (r.src = 'https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js')
-      var a = document.getElementsByTagName('script')[0]
-      a.parentNode.insertBefore(r, a)
-    }),
-      e.loadJS(),
-      e.load(
-        '2U4b8RZqZrE28N0SMdRtGFNibgq',
-        'https://antislipprcqfo.dataplane.rudderstack.com'
-      ),
-      e.page('pages', 'all_pages')
-  })()
-</script>
-
-<!-- <script type="text/javascript" is:inline>
-  !(function () {
     'use strict'
     var sdkBaseUrl = 'https://cdn.rudderlabs.com/beta/3.0.0-beta'
     var sdkName = 'rsa.min.js'
@@ -134,7 +87,8 @@ const mergedSeo = {
       {}
     )
   })()
-</script> -->
+</script>
+
 <meta
   content="width=device-width, initial-scale=1, viewport-fit=cover"
   name="viewport"

@@ -18,7 +18,7 @@ const { product, products } = Astro.props
 
 <Layout seo={null}>
   <ProductSingle
-    client:load
+    client:only
     product={product}
   />
   <ProductDetails product={product} />
