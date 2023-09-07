@@ -66,8 +66,6 @@ async function createCart(merchandiseId: string, quantity: number) {
 }
 
 export async function addToCart(merchandiseId: string, quantity: number) {
-  rudderanalytics.track('Product Added')
-  console.log('Product Added')
   const cartId = localStorage.cartId
   const isValid = cartId ? cartId.startsWith('gid://shopify/Cart/') : false
   if (isValid) {
