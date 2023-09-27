@@ -25,7 +25,7 @@
   $: setSelectedVariant(selectedOptions)
 
   async function onSubmit() {
-    rudderanalytics.track('added')
+    rudderanalytics.track('Product Added')
     console.log('added')
     await addToCart(selectedVariant.id, parseInt(quantity))
     const checkbox = document.getElementById('drawer-right')

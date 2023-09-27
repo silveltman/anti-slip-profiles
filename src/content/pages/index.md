@@ -92,7 +92,7 @@ blocks:
       vlonder i.v.m. de schroefgaten.
     button:
       text: Ga naar product
-      href: /producten/afdicht-profiel
+      href: /producten/anti-slip-strook
     image_1:
       src: /uploads/vooraanzicht-strook-zwart-met-schroef-op-kleur.jpg
       alt:
