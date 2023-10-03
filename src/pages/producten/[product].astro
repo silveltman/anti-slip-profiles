@@ -4,6 +4,7 @@ import ProductSingle from '@components/ProductSingle.svelte'
 import ProductCarousel from '@components/ProductCarousel.svelte'
 import ProductDetails from '@components/ProductDetails.svelte'
 import { getProducts } from '@utils/shopify'
+import Cta from '@components/blocks/Cta.svelte'
 
 export async function getStaticPaths() {
   const products = await getProducts()
@@ -21,6 +22,21 @@ const { product, products } = Astro.props
     client:only
     product={product}
   />
+  {
+    product.handle == 'anti-slip-profiel' ||
+      (product.handle == 'afdicht-profiel' && (
+        <Cta
+          content={{
+            heading: 'Product eerst uitproberen?',
+            button: {
+              text: 'Vraag proefpakket aan',
+              href: '/proefpakket-' + product.handle + 'en',
+            },
+          }}
+        />
+      ))
+  }
+
   <ProductDetails product={product} />
   <ProductCarousel
     currentHandle={product.handle}

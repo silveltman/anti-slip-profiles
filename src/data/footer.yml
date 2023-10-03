@@ -9,6 +9,15 @@ textarea: >+
   “eenvoud en kwaliteit” bovenaan staat.
 
 lists:
+  - heading: Contact
+    links:
+      - text: 085 0604966
+        href: tel:0850604966
+      - text: info@antislipprofiles.com
+        href: mailto:info@antislipprofiles.com
+      - text: Whatsapp
+        href: https://wa.me/31616715746
+
   - heading: Anti-Slip Profiles ®
     links:
       - text: Contact
@@ -19,11 +28,16 @@ lists:
         href: /privacyverklaring
       - text: Verzending en Retour voorwaarden
         href: '/verzending-en-retrourvoorwaarden'
+
   - heading: Producten
     links:
       - text: Vlonder Anti-slip Profiel ®
         href: /producten/anti-slip-profiel
+      - text: Proefpakket Anti-slip Profiel ®
+        href: /producten/proefpakket-anti-slip-profielen
       - text: Vlonder Afdicht Profiel ®
         href: /producten/afdicht-profiel
+      - text: Proefpakket Afdicht Profiel ®
+        href: /producten/proefpakket-afdicht-profielen
       - text: Vlonder Anti-slip Strook
         href: /producten/anti-slip-strook
