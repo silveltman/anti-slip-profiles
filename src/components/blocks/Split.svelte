@@ -56,13 +56,25 @@
           data-rosey={content.textarea}
           class="!text-base-11"
         />
-        <Button
-          variant="solid"
-          class="light-orange"
-          {...content.button}
-          data-rosey={content.button.text}
-          slot="actions"
-        />
+        <div class="flex gap-md pt-md">
+          <!-- content here -->
+          <Button
+            variant="solid"
+            class="light-orange"
+            {...content.button_1}
+            data-rosey={content.button_1.text}
+            slot="actions"
+          />
+          {#if content.button_2}
+            <Button
+              variant="soft"
+              class="light-orange"
+              {...content.button_2}
+              data-rosey={content.button_2.text}
+              slot="actions"
+            />
+          {/if}
+        </div>
       </Highlight>
     </Stack>
   </Container>

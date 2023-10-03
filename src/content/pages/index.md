@@ -33,12 +33,12 @@ blocks:
       textarea: >-
         Antislip- en afdichtprofielen zijn eenvoudig zelf te plaatsen, dat
         scheelt extra plaatsingskosten t.o.v. andere producten.
-  proefpakket:
-    _component: Cta
-    heading: Product eerst uitproberen?
-    button:
-      text: Vraag proefpakket aan
-      href: /producten
+  # proefpakket:
+  #   _component: Cta
+  #   heading: Product eerst uitproberen?
+  #   button:
+  #     text: Vraag proefpakket aan
+  #     href: /producten
   anti-slip_profiel:
     _component: Split
     eyebrow: Gepatenteerd
@@ -48,11 +48,14 @@ blocks:
       antislipstrip, eenvoudig te plaatsen zonder gebruik te maken van kit, lijm
       of schroeven! Voor zowel hout als composiet vlonderdelen en in alle
       seizoenen te plaatsen! zoals: galerijen, terrassen, bruggen en steigers.
-    button:
-      text: Ga naar product
+    button_1:
+      text: Proefpakket
+      href: producten/proefpakket-anti-slip-profielen
+    button_2:
+      text: Bekijk product
       href: producten/anti-slip-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-1949.jpg
+      src: /uploads/anti-slipprofiles-1949.jpeg
       alt: antislip profiel
     image_2:
       src: /uploads/anti-slipprofiles-162-large.jpeg
@@ -66,11 +69,14 @@ blocks:
       waar men hinder ondervindt van zand en (regen)water wat door de groeven
       naar beneden valt. Ook dit product wordt zonder kit, lijm of schroeven
       gemonteerd!
-    button:
-      text: Ga naar product
-      href: producten/afdicht-profiel
+    button_1:
+      text: Proefpakket
+      href: producten/proefpakket-afdicht-profielen
+    button_2:
+      text: Bekijk product
+      href: producten/aficht-profiel
     image_1:
-      src: /uploads/anti-slipprofiles-1945.jpg
+      src: /uploads/anti-slipprofiles-1945.jpeg
       alt: afdichtprofiel
     image_2:
       src: /uploads/anti-slipprofiles-156-large.jpeg
@@ -90,7 +96,7 @@ blocks:
       d.m.v. schroeven op kleur. Wij leveren de vlonderstroken in het zwart en
       geel. Helaas zorgt deze methode wel voor een beschadiging aan uw houten
       vlonder i.v.m. de schroefgaten.
-    button:
+    button_1:
       text: Ga naar product
       href: /producten/anti-slip-strook
     image_1:
