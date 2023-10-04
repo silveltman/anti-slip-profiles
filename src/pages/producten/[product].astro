@@ -23,18 +23,18 @@ const { product, products } = Astro.props
     product={product}
   />
   {
-    product.handle == 'anti-slip-profiel' ||
-      (product.handle == 'afdicht-profiel' && (
-        <Cta
-          content={{
-            heading: 'Product eerst uitproberen?',
-            button: {
-              text: 'Vraag proefpakket aan',
-              href: '/proefpakket-' + product.handle + 'en',
-            },
-          }}
-        />
-      ))
+    (product.handle == 'anti-slip-profiel' ||
+      product.handle == 'afdicht-profiel') && (
+      <Cta
+        content={{
+          heading: 'Product eerst uitproberen?',
+          button: {
+            text: 'Vraag proefpakket aan',
+            href: '/proefpakket-' + product.handle + 'en',
+          },
+        }}
+      />
+    )
   }
 
   <ProductDetails product={product} />

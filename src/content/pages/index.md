@@ -74,7 +74,7 @@ blocks:
       href: producten/proefpakket-afdicht-profielen
     button_2:
       text: Bekijk product
-      href: producten/aficht-profiel
+      href: /producten/afdicht-profiel
     image_1:
       src: /uploads/anti-slipprofiles-1945.jpeg
       alt: afdichtprofiel
