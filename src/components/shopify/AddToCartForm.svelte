@@ -2,7 +2,6 @@
   import { addToCart } from '@utils/shopify'
   import { Button, Select, Input, Text } from 'fulldev-ui'
   import Money from '@components/shopify/Money.svelte'
-
   export let product
   let quantity = '1'
 
