@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Antislip oplossingen - Antislip Profiles
+  title: 'Antislip oplossingen - Antislip Profiles '
   description:
   image: ''
 blocks:
@@ -33,12 +33,6 @@ blocks:
       textarea: >-
         Antislip- en afdichtprofielen zijn eenvoudig zelf te plaatsen, dat
         scheelt extra plaatsingskosten t.o.v. andere producten.
-  # proefpakket:
-  #   _component: Cta
-  #   heading: Product eerst uitproberen?
-  #   button:
-  #     text: Vraag proefpakket aan
-  #     href: /producten
   anti-slip_profiel:
     _component: Split
     eyebrow: Gepatenteerd
