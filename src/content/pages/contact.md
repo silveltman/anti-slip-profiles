@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Contact met Anti-slip profiles
+  title: 'Contact met Anti-slip profiles '
   description:
   image: ''
 blocks:
@@ -22,7 +22,7 @@ blocks:
       phone:
         icon: phone
         heading: Telefoon
-        text: '085 0604966'
+        text: 085 0604966
         href:
       email:
         icon: email
