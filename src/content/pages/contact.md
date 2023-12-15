@@ -1,6 +1,6 @@
 ---
 seo:
-  title: 'Contact met Anti-slip profiles '
+  title: Contact met Anti-slip profiles
   description:
   image: ''
 blocks:
