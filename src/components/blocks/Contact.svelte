@@ -78,7 +78,7 @@
                   </div>
                 </div>
               {/each}
-              <div class="flex gap-sm">
+              <!-- <div class="flex gap-sm">
                 <Social
                   name="facebook"
                   href="#"
@@ -91,7 +91,7 @@
                   name="linkedin"
                   href="#"
                 />
-              </div>
+              </div> -->
             </Stack>
           </Panel>
           <Panel
