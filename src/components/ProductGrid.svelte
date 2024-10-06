@@ -8,7 +8,7 @@
     Card,
     Image,
     Ratio,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
 
   import Money from '@components/shopify/Money.svelte'
 

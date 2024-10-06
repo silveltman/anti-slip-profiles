@@ -1,5 +1,5 @@
 <script>
-  import { Container, Section, Prose } from 'fulldev-ui'
+  import { Container, Section, Prose } from 'antislipprofiles-ui'
 </script>
 
 <Section {...$$restProps}>

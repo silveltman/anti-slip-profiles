@@ -8,7 +8,7 @@
     Image,
     Carousel,
     Stack,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
   import Money from './shopify/Money.svelte'
 
   export let products: any

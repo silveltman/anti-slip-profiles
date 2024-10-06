@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button, Icon } from 'fulldev-ui'
+  import { Button, Icon } from 'antislipprofiles-ui'
   import Money from '@components/shopify/Money.svelte'
   import { removeCartLine } from '@utils/shopify'
   export let line

@@ -15,7 +15,7 @@
     Social,
     Icon,
     Toggle,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
 
   export let content: any
 </script>

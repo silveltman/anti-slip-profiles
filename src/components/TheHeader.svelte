@@ -1,7 +1,7 @@
 <script lang="ts">
   import site from '@data/site'
   import header from '@data/header.yml'
-  import { Logo, Navbar, Link, Icon, Button, Drawer, Social } from 'fulldev-ui'
+  import { Logo, Navbar, Link, Icon, Button, Drawer, Social } from 'antislipprofiles-ui'
   import Cart from './shopify/Cart.svelte'
 </script>
 
