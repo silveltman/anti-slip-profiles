@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { Ratio } from 'fulldev-ui'
+  import { Ratio } from 'antislipprofiles-ui'
 
   let className = ''
   export { className as class }

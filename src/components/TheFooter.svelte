@@ -13,7 +13,7 @@
     Text,
     Heading,
     Stack,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
 </script>
 
 <Section class="z-10 -mb-xl  pb-0">

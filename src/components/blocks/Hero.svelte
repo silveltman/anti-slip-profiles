@@ -9,7 +9,7 @@
     Highlight,
     Video,
     Panel,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
 
   export let content: any
 </script>

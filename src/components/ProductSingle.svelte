@@ -11,7 +11,7 @@
     Image,
     Button,
     GalleryScroll,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
   import AddToCartForm from './shopify/AddToCartForm.svelte'
 
   export let product

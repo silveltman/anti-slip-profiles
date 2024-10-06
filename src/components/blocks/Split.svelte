@@ -8,7 +8,7 @@
     Highlight,
     Text,
     Heading,
-  } from 'fulldev-ui'
+  } from 'antislipprofiles-ui'
 
   export let content: any
 </script>

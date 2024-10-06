@@ -1,6 +1,6 @@
 <script lang="ts">
   import cartStore from '@stores/CartStore.js'
-  import { Icon, Drawer, Heading, Button, Text } from 'fulldev-ui'
+  import { Icon, Drawer, Heading, Button, Text } from 'antislipprofiles-ui'
   import CartLine from './CartLine.svelte'
   import Money from './Money.svelte'
 

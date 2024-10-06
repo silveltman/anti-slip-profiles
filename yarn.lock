@@ -1091,6 +1091,15 @@ ansi-styles@^6.1.0:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.2.1.tgz#0e62320cf99c21afff3b3012192546aacbfb05c5"
   integrity sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==
 
+antislipprofiles-ui@^0.5.16:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/antislipprofiles-ui/-/antislipprofiles-ui-0.5.16.tgz#a582bca840eb4d92b84e93f4b1bc2a4faba00176"
+  integrity sha512-EtUL+0zI1Pljq6Z6KDXgIuLUFFtTW3a6D4eJwTYEa2cMuiDZEcyDqS3ql/IJOwQS+Wu9N2QSktWOFLeUgZh+aQ==
+  dependencies:
+    "@radix-ui/colors" "^0.1.8"
+    "@rodneylab/svelte-social-icons" "^0.0.26"
+    "@tailwindcss/forms" "^0.5.3"
+
 any-promise@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
@@ -2084,15 +2093,6 @@ fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-
-fulldev-ui@^0.5.16:
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/fulldev-ui/-/fulldev-ui-0.5.16.tgz#ea460cb15a0ad17365efda1c4c82b357cf9768e8"
-  integrity sha512-t8yO0928u0sTCgNcWKkPJSSJco0v5vWJX+fljOmcLgUYWGOeYH3andIrVstoX0Gipoy3WQHdPmAN9tdGi/ajJA==
-  dependencies:
-    "@radix-ui/colors" "^0.1.8"
-    "@rodneylab/svelte-social-icons" "^0.0.26"
-    "@tailwindcss/forms" "^0.5.3"
 
 function-bind@^1.1.1:
   version "1.1.1"

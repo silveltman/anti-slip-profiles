@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Container, Stack, Section, Heading, Text, Icon } from 'fulldev-ui'
+  import { Container, Stack, Section, Heading, Text, Icon } from 'antislipprofiles-ui'
 
   export let content: any
 </script>

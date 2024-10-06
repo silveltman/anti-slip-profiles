@@ -1,6 +1,6 @@
 <script lang="ts">
   import { addToCart } from '@utils/shopify'
-  import { Button, Select, Input, Text } from 'fulldev-ui'
+  import { Button, Select, Input, Text } from 'antislipprofiles-ui'
   import Money from '@components/shopify/Money.svelte'
 
   export let product

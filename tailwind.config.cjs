@@ -13,7 +13,7 @@ function getRadixColors(object) {
 module.exports = {
   content: [
     './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-    './node_modules/fulldev-ui/dist/**/*.{html,js,svelte,ts}',
+    './node_modules/antislipprofiles-ui/dist/**/*.{html,js,svelte,ts}',
   ],
   darkMode: 'class',
   theme: {
@@ -84,6 +84,6 @@ module.exports = {
         },
       ],
     }),
-    require('fulldev-ui/plugin'),
+    require('antislipprofiles-ui/plugin'),
   ],
 }

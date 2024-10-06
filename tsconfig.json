@@ -4,25 +4,13 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@data/*": [
-        "src/data/*"
-      ],
-      "@content/*": [
-        "src/content/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@stores/*": [
-        "src/stores/*"
-      ]
-    },
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@data/*": ["src/data/*"],
+      "@content/*": ["src/content/*"],
+      "@utils/*": ["src/utils/*"],
+      "@stores/*": ["src/stores/*"]
+    }
   },
-  "include": ["src/**/*", "node_modules/fulldev-ui/dist/**/*.d.ts"],
+  "include": ["src/**/*", "node_modules/antislipprofiles-ui/dist/**/*.d.ts"]
 }

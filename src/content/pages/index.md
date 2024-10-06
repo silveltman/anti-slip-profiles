@@ -94,9 +94,9 @@ blocks:
       text: Ga naar product
       href: /producten/anti-slip-strook
     image_1:
-      src: /uploads/vooraanzicht-strook-zwart-met-schroef-op-kleur.jpg
+      src: /strook.jpg
       alt:
     image_2:
-      src: /uploads/bovenaanzicht-strook-zwart-met-schroef-op-kleur.jpg
+      src: /strook-voorbeeld.jpg
       alt:
 ---
