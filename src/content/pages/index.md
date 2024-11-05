@@ -65,7 +65,7 @@ blocks:
       gemonteerd!
     button_1:
       text: Proefpakket
-      href: producten/proefpakket-afdicht-profielen
+      href: /producten/proefpakket-afdicht-profielen
     button_2:
       text: Bekijk product
       href: /producten/afdicht-profiel
