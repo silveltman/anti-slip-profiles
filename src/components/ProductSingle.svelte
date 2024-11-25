@@ -71,6 +71,24 @@
               href="/inmeetinstructies.pdf">Bekijk inmeetinstructies</Button
             >
           {/if}
+          {#if product.handle.includes('anti-slip-profiel') || product.handle.includes('afdicht-profiel')}
+            <Button
+              target="_blank"
+              variant="soft"
+              class="light-orange w-full"
+              href="/documentatie-afdicht-en-antislip-profielen.pdf"
+              >Bekijk documentatie</Button
+            >
+          {/if}
+          {#if product.handle.includes('anti-slip-strook')}
+            <Button
+              target="_blank"
+              variant="soft"
+              class="light-orange w-full"
+              href="/documentatie-antislip-stroken.pdf"
+              >Bekijk documentatie</Button
+            >
+          {/if}
         </svelte:fragment>
       </Highlight>
     </Stack>
