@@ -75,13 +75,6 @@ blocks:
     image_2:
       src: /uploads/anti-slipprofiles-156-large.jpeg
       alt:
-  inmeetinstructies:
-    _component: Cta
-    heading: Welk type profiel heeft u nodig voor uw vlonder?
-    button:
-      text: Bekijk inmeetinstructies
-      href: /inmeetinstructies.pdf
-      target: _blank
   anti-slip_strook:
     _component: Split
     heading: Antislip strook
@@ -99,4 +92,12 @@ blocks:
     image_2:
       src: /strook-voorbeeld.jpg
       alt:
+  inmeetinstructies:
+    _component: Cta
+    style: 'padding-bottom: 0 !important;'
+    heading: Welk type profiel heeft u nodig voor uw vlonder?
+    button:
+      text: Bekijk inmeetinstructies
+      href: /inmeetinstructies.pdf
+      target: _blank
 ---

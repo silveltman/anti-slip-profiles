@@ -11,7 +11,7 @@
   export let content: any
 </script>
 
-<Section>
+<Section style={content.style}>
   <Container>
     <Panel class="dark-orange shadow-lg">
       <Highlight
