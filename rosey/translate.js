@@ -3,8 +3,14 @@ import { ChatGPTAPI } from 'chatgpt'
 
 const BASE_PATH = './rosey/'
 const LOCALES = ['en', 'de', 'fr', 'da', 'sv']
+const apiKey = process.env.OPENAI_API_KEY
+
+if (!apiKey) {
+  throw new Error('OPENAI_API_KEY is required to run the translation script')
+}
+
 const chatgpt = new ChatGPTAPI({
-  apiKey: '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',
+  apiKey,
 })
 const gptSystemMessage = `
 You are a translation service. The user will give you an array of strings and you will translate those string into the language the user provides.

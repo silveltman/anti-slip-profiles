@@ -1,6 +1,10 @@
 const path = './rosey/'
 const locales = ['en', 'de', 'fr', 'da', 'sv']
-const apiKey = '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'
+const apiKey = process.env.OPENAI_API_KEY
+
+if (!apiKey) {
+  throw new Error('OPENAI_API_KEY is required to run the translation script')
+}
 
 // const systemMessage = `
 // You are a translation API which gets called with 'Accept: application/json'. This means you only respond with valid JSON.
